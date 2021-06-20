@@ -1,0 +1,22 @@
+-----------------------------------------
+# DOCUMENTATION SASS
+
+-   npm install -g sass
+-   sass --version
+-   sass style.scss style.css
+    untuk kompilasi SASS menjadi CSS
+-   "sass --watch css:css" -> css:css = folder file
+    autocomplie semua file scss to css di foler tersebut
+-----------------------------------------
+
+
+-----------------------------------------
+# DOCUMENTATION REACTJS
+-   npx create-react-app a
+-   npx create-react-app -> add to current folder\
+-   yarn start
+    yarn lebih recomended dibangin npm
+-   yarn add axios -> untuk fetch API
+
+
+-----------------------------------------
