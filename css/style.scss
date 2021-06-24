@@ -6,10 +6,25 @@ $primaryColor: rgba(83, 233, 175, 0.534);
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 @mixin middle {
-    width: 100%;
+    // max-width: 120rem;
+    // padding: 0 6rem;
     padding: 0 6rem;
     margin: auto;
+
+    @media (max-width:768px) {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    @media (max-width:600px) {
+        padding-left: 24px;
+        padding-right: 24;
+    }
 }
 
 header {
@@ -24,42 +39,68 @@ header {
         align-items: center;
         justify-content: space-between;
 
-
-
-        .nav-logo {
-            // flex-grow: ;
-        }
+        .nav-logo {}
 
         .nav-right {
             display: flex;
+            align-items: center;
+            gap: 2rem;
 
             ul {
                 display: flex;
                 list-style: none;
+                gap: 3rem;
 
-                li {}
+                @media (max-width:768px) {
+                    // visibility: collapse;
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: antiquewhite;
+                    align-items: center;
+                    z-index: -1;
+                    justify-content: center;
+                }
             }
 
             .hamburger {
                 display: none;
+                cursor: pointer;
+
+                @media (max-width:768px) {
+                    display: inline-block;
+                }
 
                 div {
                     width: 25px;
                     height: 1px;
                     border-radius: 10px;
                     background-color: grey;
-                    margin: 5px auto;
+                    margin: 6px auto;
                 }
             }
-        }
 
+        }
 
     }
 }
 
 main {
-    @include middle();
+
     padding-top: 160px;
-    height: 300px;
-    background-color: $primaryColor;
+
+    .section1 {
+        @include middle();
+        height: 100vh;
+    }
+
+    .section2 {
+        @include middle();
+        height: 100vh;
+        background-color: $primaryColor;
+    }
 }
