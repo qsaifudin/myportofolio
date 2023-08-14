@@ -1,0 +1,6 @@
+/* assets/mouse-follow.css */
+.mouse-follower {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
