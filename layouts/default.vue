@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :style="backgroundStyle">
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -7,7 +7,7 @@
     <CursorCircle />
     <Navbar />
 
-    <v-main :style="backgroundStyle" class="px-3">
+    <v-main class="px-3">
       <!-- Your page content goes here -->
       <router-view class="main" />
     </v-main>

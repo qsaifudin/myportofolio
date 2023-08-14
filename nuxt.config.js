@@ -58,6 +58,7 @@ export default {
           myPrimary: "#ffffff",
           accent: colors.grey.darken3,
           secondary: "#A2EBD5",
+          secondaryBtn: "#1D3341",
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
@@ -66,6 +67,7 @@ export default {
         light: {
           myPrimary: "#1D3341",
           secondary: "#10A08A",
+          secondaryBtn: "#FFFFFF",
           accent: "#1D3341",
           error: "#1D3341",
           warning: "#1D3341",
