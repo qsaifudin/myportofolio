@@ -6,7 +6,10 @@
     <v-row class="d-flex align-center">
       <v-col cols="12" md="7">
         <div class="">
-          <h1 class="myPrimary--text font-extrabold">Hello, I'm Saifudin!</h1>
+          <!-- <h1 class="myPrimary--text font-extrabold">Hello, I'm Saifudin!</h1> -->
+          <h1 class="animate-text myPrimary--text font-extrabold">
+            Hello, I'm Saifudin!
+          </h1>
           <h2 class="secondary--text font-bold mb-5" style="font-size: 32px">
             Back-End Developer
           </h2>
@@ -90,6 +93,31 @@ export default {
   }
   .wrap-img {
     text-align: center !important;
+  }
+}
+
+.animate-text {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 60px;
+  background: linear-gradient(
+    to right,
+    currentColor 0,
+    #a2ebd58f 10%,
+    currentColor 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: borderAnimate 10s infinite alternate;
+}
+
+@keyframes borderAnimate {
+  0%,
+  100% {
+    background-position: -100px;
+  }
+  50% {
+    background-position: 510px;
   }
 }
 </style>
