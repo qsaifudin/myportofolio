@@ -36,7 +36,7 @@ export default {
   components: { DarkModeSwitcher },
 };
 </script>
-<style>
+<style scoped>
 .main {
   max-width: 1100px;
 }

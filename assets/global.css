@@ -1,13 +1,32 @@
 @font-face {
   font-family: "Open Sans";
+  font-weight: 300;
+  src: url("/fonts/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  src: url("/fonts/OpenSans-Reguler.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 800;
+  src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+/* @font-face {
+  font-family: "Open Sans";
   src: url("/fonts/OpenSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
-}
+} */
 
+.font-light {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
 .font-normal {
   font-family: "Open Sans", sans-serif;
-  font-weight: 550;
+  font-weight: normal;
 }
 .font-bold {
   font-family: "Open Sans", sans-serif;
@@ -31,4 +50,25 @@
   font-family: "Space Mono", monospace;
   font-weight: normal;
   font-size: 17px;
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d1d1d0; /* Color of the handle */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1908; /* Color of the handle on hover */
 }

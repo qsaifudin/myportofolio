@@ -6,18 +6,16 @@
     <v-row class="d-flex align-center">
       <v-col cols="12" md="7">
         <div class="">
-          <h1 class="myPrimary--text font-weight-extra-bold font-extrabold">
-            Hello, I'm Saifudin!
-          </h1>
+          <h1 class="myPrimary--text font-extrabold">Hello, I'm Saifudin!</h1>
           <h2 class="secondary--text font-bold mb-5" style="font-size: 32px">
             Back-End Developer
           </h2>
-          <div class="font-space-mono mt-2 mb-15">
+          <div class="font-space-mono mt-2 mb-9">
             <div class="">Stay curious, keep learning and keep growing.</div>
             <div class="">
               That is me
-              <v-btn color="secondary" text rounded="lg" class="pa-0">
-                <i class="font-space-mono capitalize"> Udin </i></v-btn
+              <v-btn color="secondary" text rounded class="pa-0" to="/about">
+                <i class="font-space-mono capitalize"> Saif </i></v-btn
               >👈
             </div>
           </div>
@@ -26,7 +24,7 @@
               <v-btn
                 color="secondary "
                 class="pa-6"
-                rounded="lg"
+                rounded
                 block
                 to="/projects"
               >
@@ -42,7 +40,7 @@
                 outlined
                 color="secondary "
                 class="pa-6"
-                rounded="lg"
+                rounded
                 block
                 to="/about"
               >
@@ -73,7 +71,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .content {
   margin-top: 6%;
   /* height: 90%; */

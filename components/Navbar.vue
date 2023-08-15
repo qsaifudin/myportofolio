@@ -3,10 +3,9 @@
     <v-app-bar
       :style="backgroundStyle"
       app
-      :color="navbarColor"
       :fixed="fixed"
       height="80px"
-      :class="[!isMobile ? 'd-flex justify-center' : '', '']"
+      :class="[!isMobile ? 'd-flex justify-center px-0' : '', '']"
       width="100%"
     >
       <div
@@ -23,11 +22,11 @@
         <div class="menu-items py-5" v-if="!isMobile">
           <v-btn
             text
+            rounded
             v-for="item in menuItems"
             :key="item.label"
             :to="item.target"
             class="capitalize font-weight-light"
-            rounded="lg"
           >
             {{ item.label }}
           </v-btn>
@@ -38,8 +37,14 @@
       <!-- small screen -->
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app temporary bottom>
-      <v-list>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      temporary
+      bottom
+      style="max-height: 100% !important"
+    >
+      <v-list style="height: 100%">
         <v-app-bar class="" elevation="0" color="transparent">
           <span>
             <DarkModeSwitcher />
@@ -49,17 +54,24 @@
             <v-icon>{{ drawer ? "mdi-close" : "mdi-menu" }}</v-icon>
           </v-btn>
         </v-app-bar>
-        <div class="text-center mb-2" v-for="item in menuItems">
+        <div class="text-center ma-5" v-for="item in menuItems">
           <v-btn
             text
+            block
+            rounded
             :key="item.label"
             :to="item.target"
-            class="capitalize font-weight-light"
-            rounded="lg"
+            class="capitalize font-weight-light pa-5 py-10 myPrimary--text"
+            style="font-size: 30px"
           >
             {{ item.label }}
           </v-btn>
         </div>
+        <v-footer app color="transparent" class="text-center justify-center">
+          <div class="text-center my-5 font-light myPrimary--text">
+            SAIFUDIN
+          </div>
+        </v-footer>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -74,10 +86,10 @@ export default {
       drawer: false,
       menuItems: [
         { label: "Home", target: "/" },
-        { label: "About Me", target: "about" },
-        { label: "Skills", target: "skills" },
-        { label: "Projects", target: "projects" },
-        { label: "Contact", target: "contact" },
+        { label: "About Me", target: "/about" },
+        { label: "Skills", target: "/skills" },
+        { label: "Projects", target: "/projects" },
+        { label: "Contact", target: "/contact" },
       ],
       isMobile: false,
       navbarDark: false,
