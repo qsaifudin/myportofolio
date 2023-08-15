@@ -14,7 +14,7 @@
         >
           <v-row class="mb-4 align-baseline">
             <v-col style="font-size: 32px" cols="12" md="6">
-              <b> Hai, I am Saif </b>
+              <b> Hi! I'm Saif </b>
             </v-col>
             <v-col
               cols="12"
@@ -116,7 +116,7 @@
           </v-row>
 
           <div
-            class="mt-16 font-light mb-16 text-center"
+            class="mt-16 font-light mb-7 text-center"
             style="font-size: 13px"
           >
             ~ This place is a dream. Only a sleeper considers it real ~

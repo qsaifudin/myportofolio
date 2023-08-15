@@ -72,3 +72,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ff1908; /* Color of the handle on hover */
 }
+
+.tes {
+  background-color: #37ba9313;
+}

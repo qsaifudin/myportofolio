@@ -16,8 +16,8 @@ export default {
   computed: {
     circleStyle() {
       const backgroundColor = this.$vuetify.theme.dark
-        ? "#78b3a137"
-        : "#37ba935a";
+        ? "#78b3a115"
+        : "#37ba9313";
 
       return {
         width: `${this.circleSize}px`,

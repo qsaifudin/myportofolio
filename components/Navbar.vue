@@ -12,10 +12,11 @@
         class="d-flex align-center justify-space-around"
         :style="{ width: !isMobile ? '1100px' : '100%' }"
       >
-        <v-toolbar-title style="font-weight: bolder">
-          SAIFUDIN
+        <v-toolbar-title style="font-weight: bolder" class="myPrimary--text">
+          SAiFUD!N
         </v-toolbar-title>
         <v-spacer></v-spacer>
+        <DarkModeSwitcher v-if="isMobile" />
         <v-btn icon @click.stop="drawer = !drawer" v-if="isMobile">
           <v-icon>{{ drawer ? "mdi-close" : "mdi-menu" }}</v-icon>
         </v-btn>
@@ -36,7 +37,6 @@
 
       <!-- small screen -->
     </v-app-bar>
-
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -46,9 +46,6 @@
     >
       <v-list style="height: 100%">
         <v-app-bar class="" elevation="0" color="transparent">
-          <span>
-            <DarkModeSwitcher />
-          </span>
           <v-spacer></v-spacer>
           <v-btn icon @click.stop="drawer = !drawer" v-if="isMobile">
             <v-icon>{{ drawer ? "mdi-close" : "mdi-menu" }}</v-icon>
