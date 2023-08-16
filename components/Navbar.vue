@@ -12,9 +12,11 @@
         class="d-flex align-center justify-space-around"
         :style="{ width: !isMobile ? '1100px' : '100%' }"
       >
-        <v-toolbar-title style="font-weight: bolder" class="myPrimary--text">
-          SAiFUD!N
-        </v-toolbar-title>
+        <router-link to="/" class="text-decoration-none">
+          <v-toolbar-title style="font-weight: bolder" class="myPrimary--text">
+            SAiFUD!N
+          </v-toolbar-title>
+        </router-link>
         <v-spacer></v-spacer>
         <DarkModeSwitcher v-if="isMobile" />
         <v-btn icon @click.stop="drawer = !drawer" v-if="isMobile">

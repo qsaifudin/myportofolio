@@ -19,13 +19,8 @@
             </v-carousel-item>
           </v-carousel>
           <div class="pa-sm-5 pa-3">
-            <v-row class="font-normal mb-3 align-center">
-              <v-col
-                class="py-1"
-                cols="12"
-                md="9"
-                style="font-size: 25px; font-weight: 300px"
-              >
+            <v-row class="font-normal mb-3 mt-1 align-center">
+              <v-col class="py-1" cols="12" md="9" style="font-weight: 700">
                 {{ item.title }}
               </v-col>
               <v-col class="py-1 text-md-right" cols="12" md="3">{{
