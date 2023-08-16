@@ -4,11 +4,10 @@
     <v-row class="font-normal mb-3 align-start mt-3">
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
         <v-card
-          class="pa-0"
+          class="pa-0 card-hover-effect card-wrap"
           light
           rounded="lg"
           elevation="0"
-          style="border: 3px solid rgb(236, 236, 236); color: #1d3341"
         >
           <v-carousel height="300">
             <v-carousel-item
@@ -134,5 +133,16 @@ export default {
   height: 15px;
   margin-top: 4px;
   margin-right: 10px; /* Adjust as needed */
+}
+
+.card-wrap {
+  border: 3px solid rgb(236, 236, 236);
+  color: #1d3341;
+}
+.card-hover-effect:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  border: 4px solid #6bdab8;
+  border-radius: 12px !important;
 }
 </style>

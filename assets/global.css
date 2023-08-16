@@ -82,6 +82,19 @@
   text-transform: capitalize !important;
 }
 
+/* Global stylesheet or scoped style tag */
+.page-popup-enter-active,
+.page-popup-leave-active {
+  /* transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+  /* transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1.2);  */
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1.08); /* Adjust the values here */
+}
+
+.page-popup-enter,
+.page-popup-leave-to {
+  transform: translateY(100%);
+}
+
 .tes {
   background-color: #37ba935a;
 }

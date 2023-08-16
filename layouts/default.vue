@@ -8,8 +8,10 @@
     <Navbar />
 
     <v-main class="px-3" style="padding-bottom: 5px" :style="backgroundStyle">
-      <!-- Your page content goes here -->
-      <router-view class="main" />
+      <transition name="page-popup">
+        <!-- <router-view class="main" /> -->
+        <nuxt class="main" />
+      </transition>
     </v-main>
   </v-app>
 </template>
