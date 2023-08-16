@@ -7,7 +7,7 @@
         width="19"
         icon="logos:spotify-icon"
       />
-      <span v-if="!currentlyPlaying">
+      <span v-if="currentlyPlaying">
         {{ currentlyPlaying.item.name }}
         <!-- ini Lagu -->
         ●
