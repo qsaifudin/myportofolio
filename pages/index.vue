@@ -3,7 +3,7 @@
     grid-list-xs
     class="pa-0 content d-flex align-center justify-space-between"
   >
-    <v-row class="d-flex align-center">
+    <v-row class="d-flex align-center ma-0">
       <v-col cols="12" md="7">
         <div class="">
           <!-- <h1 class="myPrimary--text font-extrabold">Hello, I'm Saifudin!</h1> -->

@@ -41,7 +41,7 @@ export default {
         {
           text: "Typescript",
           icon: "skill-icons:typescript",
-          level: "Advance",
+          level: "Intermediate",
         },
         {
           text: "Javascript (NodeJS, ExpressJS)",
@@ -56,14 +56,15 @@ export default {
         {
           text: "NoSQL (MongoDB)",
           icon: "devicon:mongodb-wordmark",
-          level: "Advance",
+          level: "basic",
         },
         { text: "Vue/NuxtJS", icon: "devicon:nuxtjs", level: "Advance" },
         { text: "Git", icon: "logos:git", level: "Advance" },
-        { text: "Docker", icon: "skill-icons:docker", level: "Advance" },
+        { text: "Docker", icon: "skill-icons:docker", level: "basic" },
+        { text: "Unit Test(Jest)", icon: "skill-icons:jest", level: "basic" },
         { text: "REST APIs", icon: "carbon:api-1", level: "Advance" },
-        { text: "OOP", icon: "ic:baseline-loop", level: "Advance" },
-        { text: "Agile", icon: "iconoir:agile", level: "Advance" },
+        { text: "OOP", icon: "ic:baseline-loop", level: "Intermediate" },
+        { text: "Agile", icon: "iconoir:agile", level: "Intermediate" },
         // Add more items as needed
       ],
     };

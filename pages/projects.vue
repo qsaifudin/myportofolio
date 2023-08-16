@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-xs class="pa-5 pt-4 myPrimary--text">
     <h1 class="text-center helvetica-bold font-extrabold mb-4">Projects</h1>
-    <v-row class="font-normal mb-3 align-end mt-3">
+    <v-row class="font-normal mb-3 align-start mt-3">
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
         <v-card
           class="pa-0"
@@ -15,7 +15,7 @@
               v-for="(image, imageIndex) in item.images"
               :key="imageIndex"
             >
-              <v-img :src="image" aspect-ratio="1"></v-img>
+              <v-img :src="image"></v-img>
             </v-carousel-item>
           </v-carousel>
           <div class="pa-sm-5 pa-3">
@@ -27,12 +27,10 @@
                 item.date
               }}</v-col>
             </v-row>
-            <div class="font-normal">
-              <ul class="custom-icon-list mt-3">
-                <li
-                  v-for="(desc, descIndex) in item.description"
-                  :key="descIndex"
-                >
+            <div class="font-normal mt-3">
+              {{ item.description }}
+              <ul class="custom-icon-list mt-2">
+                <li v-for="(desc, descIndex) in item.list" :key="descIndex">
                   <iconify-icon
                     icon="simple-line-icons:check"
                     width="20"
@@ -75,45 +73,43 @@ export default {
     return {
       items: [
         {
-          title: "Adamlabs - Wahana Gunilang Group",
+          title: "(Bangkit 2023) Product Based Project - Expressify",
+          date: "Juni 2023",
           images: [
-            "/projects/gigi/1.png",
-            "/projects/gigi/2.png",
-            "/projects/gigi/3.png",
+            "/projects/bangkit/1.png",
+            "/projects/bangkit/2.png",
+            "/projects/bangkit/3.png",
           ],
-          description: [
-            "Rebuilt the frontend of a laboratory information system ",
-            "Maintenance of existing applications.",
-          ],
-          github: "https://www.google.com",
-          link: "https://www.fb.com",
-          date: "2020",
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "https://github.com/orgs/Expressify/repositories",
+          link: "https://www.youtube.com/watch?v=Gpw-arXhlz4",
         },
         {
-          title: "Adamlabs - Wahana Gunilang Group",
+          title: "aa",
+          date: "aaa",
           images: [
-            "/projects/gigi/2.png",
             "/projects/gigi/1.png",
+            "/projects/gigi/2.png",
             "/projects/gigi/3.png",
           ],
-          description: [
-            "Rebuilt the frontend of a laboratory information system ",
-            "Maintenance of existing applications.",
-          ],
-          date: "2021",
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "aaa",
+          link: "aaa",
         },
         {
-          title: "Adamlabs - Wahana Gunilang Group",
+          title: "aa",
+          date: "aaa",
           images: [
-            "/projects/gigi/2.png",
-            "/projects/gigi/1.png",
-            "/projects/gigi/3.png",
+            "/projects/bbb/aaa",
+            "/projects/bbb/aaa",
+            "/projects/bbb/aaa",
           ],
-          description: [
-            "Rebuilt the frontend of a laboratory information system ",
-            "Maintenance of existing applications.",
-          ],
-          date: "2021",
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "aaa",
+          link: "aaa",
         },
       ],
     };

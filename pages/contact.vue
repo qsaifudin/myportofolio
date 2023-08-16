@@ -100,7 +100,7 @@
         </form>
       </v-col>
     </v-row>
-    <div class="d-flex align-end justify-center" style="min-height: 300px">
+    <div class="d-flex align-end justify-center" style="min-height: 250px">
       <v-footer
         color="transparent"
         class="text-center justify-center"

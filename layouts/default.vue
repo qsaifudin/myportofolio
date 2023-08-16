@@ -7,7 +7,7 @@
     <CursorCircle />
     <Navbar />
 
-    <v-main class="px-3" style="padding-bottom: 5px">
+    <v-main class="px-3" style="padding-bottom: 5px" :style="backgroundStyle">
       <!-- Your page content goes here -->
       <router-view class="main" />
     </v-main>

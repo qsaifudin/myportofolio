@@ -55,6 +55,7 @@
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
   width: 9px; /* Width of the scrollbar */
+  background: #10a08a;
 }
 
 /* Track */
