@@ -54,25 +54,33 @@
 
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 9px; /* Width of the scrollbar */
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color of the track */
+  background: #10a08a; /* Color of the track */
+  margin: 10px; /* Add margin between track and scrollbar */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d1d1d0; /* Color of the handle */
-  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(to bottom, #10a08a, #d1fffa, #10a08a);
+  border-radius: 10px; /* Rounded corners */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff1908; /* Color of the handle on hover */
+  background: linear-gradient(to bottom, #10a08a, #99eab2, #10a08a);
+}
+
+.lowerCase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize !important;
 }
 
 .tes {
-  background-color: #37ba9313;
+  background-color: #37ba935a;
 }

@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import "~/assets/style.css"; // Import the CSS file
 import DarkModeSwitcher from "~/components/DarkModeSwitcher.vue";
 
 export default {

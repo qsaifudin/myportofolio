@@ -1,12 +1,16 @@
 <template>
-  <div class="smooth-mouse-circle" :style="circleStyle"></div>
+  <div
+    class="smooth-mouse-circle"
+    :style="circleStyle"
+    style="background: radial-gradient(circle, #15be9132 10%, #ffffff00 70%)"
+  ></div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      circleSize: 65,
+      circleSize: 75,
       mouseX: 0,
       mouseY: 0,
       currentX: 0,
@@ -23,7 +27,6 @@ export default {
         width: `${this.circleSize}px`,
         height: `${this.circleSize}px`,
         transform: `translate(${this.currentX}px, ${this.currentY}px)`,
-        backgroundColor: backgroundColor,
       };
     },
   },

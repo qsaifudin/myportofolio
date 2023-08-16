@@ -148,7 +148,7 @@ export default {
         );
 
         // Show success toast
-        this.$toast.success("Email sent successfully.");
+        this.$toast("Email sent successfully.");
       } catch (error) {
         console.error("Error sending email:", error);
 
