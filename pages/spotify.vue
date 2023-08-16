@@ -8,13 +8,11 @@
         icon="logos:spotify-icon"
       />
       <span v-if="!currentlyPlaying">
-        <!-- {{ currentlyPlaying.item.name }} -->
-        ini Lagu
-        <!-- <iconify-icon class="icon-container" width="25" icon="octicon:dot-24" />  -->
+        {{ currentlyPlaying.item.name }}
+        <!-- ini Lagu -->
         ●
-        <!-- {{ getArtistsNames(currentlyPlaying.item.artists) }} -->
-
-        ini Artis
+        {{ getArtistsNames(currentlyPlaying.item.artists) }}
+        <!-- ini Artis -->
       </span>
       <span v-else> Not Playing </span>
     </div>
