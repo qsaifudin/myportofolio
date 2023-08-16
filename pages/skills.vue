@@ -1,6 +1,6 @@
 <template>
   <v-container grid-list-xs class="pa-5 pt-4 myPrimary--text">
-    <h1 class="text-center helvetica-bold font-extrabold mb-4">About</h1>
+    <h1 class="text-center helvetica-bold font-extrabold mb-4">Skills</h1>
     <v-row class="d-flex align-start">
       <v-col
         v-for="(item, index) in items"

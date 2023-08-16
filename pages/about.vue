@@ -119,7 +119,7 @@
             class="mt-16 font-light mb-7 text-center"
             style="font-size: 13px"
           >
-            ~ This place is a dream. Only a sleeper considers it real ~
+            ~This place is a dream. Only a sleeper considers it real~
           </div>
         </v-col>
       </v-row>

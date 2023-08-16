@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
@@ -16,6 +17,7 @@
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
+    "vue-toastification": "^1.7.14",
     "vuetify": "^2.6.10"
   },
   "devDependencies": {
