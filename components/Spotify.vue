@@ -30,6 +30,7 @@
 
 <script>
 import axios from "axios";
+import querystring from "querystring";
 
 export default {
   data() {
@@ -40,10 +41,8 @@ export default {
     };
   },
   async created() {
-    await this.fetchSpotifyData();
-    setInterval(this.fetchSpotifyData, 60000);
-    // await this.getToken();
-    // setInterval(this.getToken, 60000);
+    await this.getToken();
+    setInterval(this.getToken, 60000);
     await this.fetchCurrentlyPlaying();
     this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
   },
@@ -57,51 +56,41 @@ export default {
     clearInterval(this.fetchInterval);
   },
   methods: {
-    async fetchSpotifyData() {
-      let client_id = "51ce5a5172a742dc90e78d8fc65ccd5c";
-      let client_secret = "b469c2cab38846e68b75d5bc3208af6d";
-      try {
-        const authOptions = {
-          url: "https://accounts.spotify.com/api/token",
-          method: "post",
-          headers: {
-            Authorization: "Basic " + btoa(client_id + ":" + client_secret),
-          },
-          data: new URLSearchParams({
-            grant_type: "client_credentials",
-          }),
-        };
-
-        const authResponse = await axios(authOptions);
-        this.token = authResponse.data.access_token;
-      } catch (error) {
-        console.error("Error fetching Spotify data:", error);
-      }
-    },
     async getToken() {
       let client_id = "51ce5a5172a742dc90e78d8fc65ccd5c";
       let client_secret = "b469c2cab38846e68b75d5bc3208af6d";
+      let refresh_token =
+        "AQDhParlwUB6AANa705DtzF7A_mD9jcLg2u5hMgYj8oXWFtqJ0S_CKOe9Y1NgXYeGTBWeZYrCC3JWoQP0JsGqFmUXgAiJe5u_tenpO3LGA1haZppfMGthXoOLr7I3VTbnkk";
+      // let token = btoa(client_id + ":" + client_secret)
+      let basic = Buffer.from(`${client_id}:${client_secret}`).toString(
+        "base64"
+      );
       const result = await fetch("https://accounts.spotify.com/api/token", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          Authorization:
-            "Basic " +
-            new Buffer.from(client_id + ":" + client_secret).toString("base64"),
+          Authorization: `Basic ${basic}`,
         },
-        body: "grant_type=client_credentials",
+        body: querystring.stringify({
+          grant_type: "refresh_token",
+          refresh_token,
+        }),
       });
+      // body: "grant_type=client_credentials",
+      console.log(
+        "🚀 ~ file: spotify.vue:78 ~ getToken ~ querystring.stringif",
+        querystring.stringify({ grant_type: "refresh_token", refresh_token })
+      );
 
       const data = await result.json();
-      console.log("🚀 ~ file: spotify.vue:74 ~ getToken ~ data:", data);
+      console.log("🚀 ~ file: spotify.vue:74 ~ getToken ~ data: 222", data);
       this.token = data.access_token;
     },
 
     async fetchCurrentlyPlaying() {
-      this.token =
-        "BQCxogov3uA5AOFMyY7B2NG8VV23GZzLWq4uiBy4sot0XrAOrMPT7Quq7GACVI5tqAeLU2PqweGOPhGI5ZqwpmFQkOPRGGs46RVwhhDmEspvOdrEFfbl15j1MvVygQfEFKF7rqmRRHBoV5dKTOlaW4KrXwpd4xkT8D9T422yKYTrvSxBA5TED1E7rqdJLjEQGvrzGOMZKC8w2cKWGn_G";
+      // this.token =
+      //   "BQCxogov3uA5AOFMyY7B2NG8VV23GZzLWq4uiBy4sot0XrAOrMPT7Quq7GACVI5tqAeLU2PqweGOPhGI5ZqwpmFQkOPRGGs46RVwhhDmEspvOdrEFfbl15j1MvVygQfEFKF7rqmRRHBoV5dKTOlaW4KrXwpd4xkT8D9T422yKYTrvSxBA5TED1E7rqdJLjEQGvrzGOMZKC8w2cKWGn_G";
       let url = "https://api.spotify.com/v1/me/player";
-      // let url = "https://api.spotify.com/v1/me/player/currently-playing";
       try {
         const response = await axios.get(url, {
           headers: {
