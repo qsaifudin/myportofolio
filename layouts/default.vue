@@ -8,10 +8,10 @@
     <Navbar />
 
     <v-main class="px-3" style="padding-bottom: 5px" :style="backgroundStyle">
-      <transition name="page-popup">
-        <!-- <router-view class="main" /> -->
-        <nuxt class="main" />
-      </transition>
+      <!-- <transition name="page-popup"> -->
+      <!-- <router-view class="main" /> -->
+      <Nuxt class="main" />
+      <!-- </transition> -->
     </v-main>
   </v-app>
 </template>
@@ -20,6 +20,14 @@
 import DarkModeSwitcher from "~/components/DarkModeSwitcher.vue";
 
 export default {
+  transition: {
+    name: "page-popup",
+  },
+  beforeRouteUpdate(to, from, next) {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+    next();
+  },
   computed: {
     backgroundStyle() {
       const gradientStartColor = !this.$vuetify.theme.dark

@@ -82,17 +82,13 @@
   text-transform: capitalize !important;
 }
 
-/* Global stylesheet or scoped style tag */
-.page-popup-enter-active,
-.page-popup-leave-active {
-  /* transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
-  /* transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1.2);  */
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.3, 1.025); /* Adjust the values here */
+.my-page-enter-active,
+.my-page-leave-active {
+  transition: opacity 0.2s;
 }
-
-.page-popup-enter,
-.page-popup-leave-to {
-  transform: translateY(100%);
+.my-page-enter,
+.my-page-leave-to {
+  opacity: 0;
 }
 
 .tes {
