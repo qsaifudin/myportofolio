@@ -41,14 +41,10 @@ export default {
     };
   },
   async created() {
-    await this.getToken().then(async (res) => {
-      if (res) {
-        this.token = res;
-        await this.fetchCurrentlyPlaying();
-        this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
-      }
-    });
+    await this.getToken();
     setInterval(this.getToken, 60000 * 55);
+    await this.fetchCurrentlyPlaying();
+    this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
   },
   mounted() {
     setInterval(() => {
