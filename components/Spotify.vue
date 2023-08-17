@@ -19,7 +19,7 @@
       v-if="currentlyPlaying"
       style="letter-spacing: -0.5px; word-spacing: -2px"
     >
-      {{ currentlyPlaying.item.name }}
+      {{ currentlyPlaying.item.name }} •
       <!-- Tik Tok Attack on Titan Hope (No Instruments) • -->
       <span style="font-size: 12px">
         {{ getArtistsNames(currentlyPlaying.item.artists) }}
