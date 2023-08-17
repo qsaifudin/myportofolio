@@ -1,29 +1,31 @@
 <template>
-  <div class="d-flex align-center font-space-mono" style="font-size: 14px">
-    <iconify-icon
-      class="icon-container mr-1"
-      width="15"
-      icon="logos:spotify-icon"
-    />
-    <iconify-icon
-      :key="iconKey"
-      v-if="currentlyPlaying"
-      class="icon-container mr-1"
-      width="15"
-      icon="svg-spinners:bars-scale-middle"
-    />
-    <span
+  <div class="d-flex align-center font-space-mono px-3" style="font-size: 14px">
+    <div class="d-flex mr-1">
+      <iconify-icon
+        class="icon-container mr-1"
+        width="15"
+        icon="logos:spotify-icon"
+      />
+      <iconify-icon
+        :key="iconKey"
+        v-if="currentlyPlaying"
+        class="icon-container mr-1"
+        width="15"
+        icon="svg-spinners:bars-scale-middle"
+      />
+    </div>
+    <div
+      class="text-left"
       v-if="currentlyPlaying"
       style="letter-spacing: -0.5px; word-spacing: -2px"
     >
       {{ currentlyPlaying.item.name }}
-      <!-- ini Lagu  -->
-      •
+      <!-- Tik Tok Attack on Titan Hope (No Instruments) • -->
       <span style="font-size: 12px">
         {{ getArtistsNames(currentlyPlaying.item.artists) }}
-        <!-- ini Arti s -->
+        <!-- Zeus Lightning -->
       </span>
-    </span>
+    </div>
     <span v-else> Not Playing </span>
   </div>
 </template>
@@ -94,13 +96,16 @@ export default {
       // this.token =
       //   "BQCxogov3uA5AOFMyY7B2NG8VV23GZzLWq4uiBy4sot0XrAOrMPT7Quq7GACVI5tqAeLU2PqweGOPhGI5ZqwpmFQkOPRGGs46RVwhhDmEspvOdrEFfbl15j1MvVygQfEFKF7rqmRRHBoV5dKTOlaW4KrXwpd4xkT8D9T422yKYTrvSxBA5TED1E7rqdJLjEQGvrzGOMZKC8w2cKWGn_G";
       let url = "https://api.spotify.com/v1/me/player";
+      this.currentlyPlaying = null;
       try {
         const response = await axios.get(url, {
           headers: {
             Authorization: `Bearer ${this.token}`,
           },
         });
-        this.currentlyPlaying = response.data;
+        if (response.data.is_playing) {
+          this.currentlyPlaying = response.data;
+        }
       } catch (error) {
         console.error("Error fetching currently playing track:", error);
         this.currentlyPlaying = null;
