@@ -1,5 +1,8 @@
 <template>
-  <div class="d-flex align-center font-space-mono px-3" style="font-size: 14px">
+  <div
+    class="d-flex align-center font-space-mono px-10"
+    style="font-size: 14px"
+  >
     <div class="d-flex mr-1">
       <iconify-icon
         class="icon-container mr-1"
