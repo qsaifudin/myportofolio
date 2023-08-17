@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-btn icon @click="toggleDarkMode">
-      <div v-if="nightMode">
+      <div v-if="!nightMode">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
