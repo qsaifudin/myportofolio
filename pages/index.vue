@@ -3,7 +3,7 @@
     grid-list-xs
     class="pa-0 content d-flex align-center justify-space-between"
   >
-    <v-row class="d-flex align-center ma-0">
+    <v-row class="d-flex align-center ma-0 mb-9">
       <v-col cols="12" md="7">
         <div class="">
           <!-- <h1 class="myPrimary--text font-extrabold">Hello, I'm Saifudin!</h1> -->
@@ -94,7 +94,6 @@ export default {
 @media (max-width: 960px) {
   .image {
     max-width: 90%; /* Change the max-width to 100% on smaller screens */
-    padding-bottom: 40px;
   }
   .wrap-img {
     text-align: center !important;
