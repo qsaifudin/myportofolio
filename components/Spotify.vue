@@ -41,10 +41,14 @@ export default {
     };
   },
   async created() {
-    await this.getToken();
-    setInterval(this.getToken, 60000 * 56);
-    await this.fetchCurrentlyPlaying();
-    this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
+    await this.getToken().then(async (res) => {
+      if (res) {
+        this.token = res;
+        await this.fetchCurrentlyPlaying();
+        this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
+      }
+    });
+    setInterval(this.getToken, 60000 * 55);
   },
   mounted() {
     setInterval(() => {
@@ -57,8 +61,10 @@ export default {
   },
   methods: {
     async getToken() {
-      let client_id = "51ce5a5172a742dc90e78d8fc65ccd5c";
-      let client_secret = "b469c2cab38846e68b75d5bc3208af6d";
+      // let client_id = "51ce5a5172a742dc90e78d8fc65ccd5c";
+      // let client_secret = "b469c2cab38846e68b75d5bc3208af6d";
+      let client_id = "83e307eab4cc4e9bab3382b5bc13cc67";
+      let client_secret = "cbb426252fa44f5bb26334b3aa651fa8";
       // let refresh_token =
       //   "AQDhParlwUB6AANa705DtzF7A_mD9jcLg2u5hMgYj8oXWFtqJ0S_CKOe9Y1NgXYeGTBWeZYrCC3JWoQP0JsGqFmUXgAiJe5u_tenpO3LGA1haZppfMGthXoOLr7I3VTbnkk";
       let refresh_token =
