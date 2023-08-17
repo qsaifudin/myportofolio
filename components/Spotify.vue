@@ -3,28 +3,37 @@
     class="d-flex align-center font-space-mono px-10"
     style="font-size: 14px"
   >
-    <div class="d-flex align-center">
-      <v-btn
-        icon
-        small
-        class="pa-0 ma-0"
-        href="https://open.spotify.com/user/9uwvt2owvprqjiaqxsel4gshw?si=8b87e34c2a344938"
-        target="__blank"
-      >
-        <iconify-icon
-          class="icon-container"
-          width="15"
-          icon="logos:spotify-icon"
-        />
-      </v-btn>
-      <iconify-icon
-        :key="iconKey"
-        v-if="currentlyPlaying"
-        class="icon-container mr-1"
-        width="15"
-        icon="svg-spinners:bars-scale-middle"
-      />
-    </div>
+    <v-tooltip left>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          v-bind="attrs"
+          v-on="on"
+          style="height: 25px"
+          rounded
+          fab
+          elevation="0"
+          small
+          class="pa-1 ma-0 mr-1"
+          href="https://open.spotify.com/user/9uwvt2owvprqjiaqxsel4gshw?si=8b87e34c2a344938"
+          target="__blank"
+        >
+          <iconify-icon
+            class="icon-container"
+            width="15"
+            icon="logos:spotify-icon"
+          />
+          <iconify-icon
+            :key="iconKey"
+            v-if="currentlyPlaying"
+            class="icon-container mr-1"
+            width="15"
+            icon="svg-spinners:bars-scale-middle"
+          />
+        </v-btn>
+      </template>
+      <span>Looks my Spotify</span>
+    </v-tooltip>
+
     <div
       class="text-left"
       v-if="currentlyPlaying"
