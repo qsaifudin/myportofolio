@@ -42,7 +42,7 @@ export default {
   },
   async created() {
     await this.getToken();
-    setInterval(this.getToken, 60000);
+    setInterval(this.getToken, 60000 * 56);
     await this.fetchCurrentlyPlaying();
     this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
   },

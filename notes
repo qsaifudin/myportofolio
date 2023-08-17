@@ -1,0 +1,9 @@
+spotify : https://theodorusclarence.com/blog/spotify-now-playing
+
+https://accounts.spotify.com/authorize?client_id=83e307eab4cc4e9bab3382b5bc13cc67&response_type=code&redirect_uri=https
+%3A%2F%2Fqsaifudin.netlify.app&scope=user-read-currently-playing
+https://qsaifudin.netlify.app/?code=AQALB7eYCqlJkgsIYRunil2zE1uUjwfIiXT8roQuRFGZJ27KybkhFh1uxRD8xnDQ2JW2oBhuWFLwxDYH7bENH92TYT3d5lvhZPcB_FUMagsnpOXB5XEJv1VnZLUjlVoUILU6LZLYdpzkEAnsxp5b-s5iynY7Krs4LL-dWeu1zbqVEsgZO_exMLFEuJqUpI7lAdfZobM5AY9gFDZS6sg
+
+ODNlMzA3ZWFiNGNjNGU5YmFiMzM4MmI1YmMxM2NjNjc6Y2JiNDI2MjUyZmE0NGY1YmIyNjMzNGIzYWE2NTFmYTg=
+
+curl -H "Authorization: Basic ODNlMzA3ZWFiNGNjNGU5YmFiMzM4MmI1YmMxM2NjNjc6Y2JiNDI2MjUyZmE0NGY1YmIyNjMzNGIzYWE2NTFmYTg" -d grant_type=authorization_code -d code=AQALB7eYCqlJkgsIYRunil2zE1uUjwfIiXT8roQuRFGZJ27KybkhFh1uxRD8xnDQ2JW2oBhuWFLwxDYH7bENH92TYT3d5lvhZPcB_FUMagsnpOXB5XEJv1VnZLUjlVoUILU6LZLYdpzkEAnsxp5b-s5iynY7Krs4LL-dWeu1zbqVEsgZO_exMLFEuJqUpI7lAdfZobM5AY9gFDZS6sg -d redirect_uri=https%3A%2F%2Fqsaifudin.netlify.app https://accounts.spotify.com/api/token
