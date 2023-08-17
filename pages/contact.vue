@@ -115,6 +115,10 @@
 <script>
 import emailjs from "@emailjs/browser";
 export default {
+  head: {
+    title: "Contact", // Set the title specific to this route
+  },
+
   data() {
     return {
       name: "",

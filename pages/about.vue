@@ -123,7 +123,9 @@
 </template>
 <script>
 export default {
-  // ... other component options ...
+  head: {
+    title: "About", // Set the title specific to this route
+  },
 
   computed: {
     imageSrc() {

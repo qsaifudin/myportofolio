@@ -35,6 +35,10 @@
 
 <script>
 export default {
+  head: {
+    title: "Skills", // Set the title specific to this route
+  },
+
   data() {
     return {
       items: [

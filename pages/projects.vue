@@ -68,6 +68,10 @@
 </template>
 <script>
 export default {
+  head: {
+    title: "Projects", // Set the title specific to this route
+  },
+
   data() {
     return {
       items: [
