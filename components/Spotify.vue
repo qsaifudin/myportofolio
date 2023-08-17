@@ -3,12 +3,20 @@
     class="d-flex align-center font-space-mono px-10"
     style="font-size: 14px"
   >
-    <div class="d-flex mr-1">
-      <iconify-icon
-        class="icon-container mr-1"
-        width="15"
-        icon="logos:spotify-icon"
-      />
+    <div class="d-flex align-center">
+      <v-btn
+        icon
+        small
+        class="pa-0 ma-0"
+        href="https://open.spotify.com/user/9uwvt2owvprqjiaqxsel4gshw?si=8b87e34c2a344938"
+        target="__blank"
+      >
+        <iconify-icon
+          class="icon-container"
+          width="15"
+          icon="logos:spotify-icon"
+        />
+      </v-btn>
       <iconify-icon
         :key="iconKey"
         v-if="currentlyPlaying"
