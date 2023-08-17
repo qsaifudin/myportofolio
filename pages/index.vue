@@ -55,8 +55,13 @@
           </v-row>
         </div>
       </v-col>
-      <v-col cols="12" md="5" class="wrap-img pa-0">
+      <v-col
+        cols="12"
+        md="5"
+        class="wrap-img pa-0 d-flex align-center flex-column"
+      >
         <img :src="imageSrc" alt="" max-width="470" class="image" />
+        <Spotify />
       </v-col>
     </v-row>
   </v-container>

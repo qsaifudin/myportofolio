@@ -1,21 +1,26 @@
 <template>
-  <div>
-    <h1>Currently Playing on Spotify</h1>
-    <div class="d-flex align-center">
-      <iconify-icon
-        class="icon-container mr-1 mb-1"
-        width="19"
-        icon="logos:spotify-icon"
-      />
-      <span v-if="currentlyPlaying">
-        {{ currentlyPlaying.item.name }}
-        <!-- ini Lagu -->
-        ●
+  <div class="d-flex align-center font-space-mono" style="font-size: 14px">
+    <iconify-icon
+      class="icon-container mr-1"
+      width="15"
+      icon="logos:spotify-icon"
+    />
+    <iconify-icon
+      v-if="currentlyPlaying"
+      class="icon-container mr-1"
+      width="15"
+      icon="svg-spinners:bars-scale-middle"
+    />
+    <span v-if="currentlyPlaying">
+      {{ currentlyPlaying.item.name }}
+      <!-- ini Lagu  -->
+      •
+      <span style="font-size: 12px">
         {{ getArtistsNames(currentlyPlaying.item.artists) }}
-        <!-- ini Artis -->
+        <!-- ini Arti s -->
       </span>
-      <span v-else> Not Playing </span>
-    </div>
+    </span>
+    <span v-else> Not Playing </span>
   </div>
 </template>
 
