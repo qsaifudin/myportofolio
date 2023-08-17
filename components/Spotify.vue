@@ -31,7 +31,7 @@
           />
         </v-btn>
       </template>
-      <span>Looks my Spotify</span>
+      <span>Just for fun</span>
     </v-tooltip>
 
     <div
