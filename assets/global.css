@@ -10,6 +10,11 @@
 }
 @font-face {
   font-family: "Open Sans";
+  font-weight: 700;
+  src: url("@/static/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
   font-weight: 800;
   src: url("@/static/fonts/OpenSans-ExtraBold.ttf") format("truetype");
 }
@@ -30,7 +35,7 @@
 }
 .font-bold {
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .font-extrabold {

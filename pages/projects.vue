@@ -3,17 +3,14 @@
     <h1 class="text-center helvetica-bold font-extrabold mb-4">Projects</h1>
     <v-row class="font-normal mb-3 align-start mt-3">
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
-        <v-card
-          class="pa-0 card-hover-effect card-wrap"
-          light
-          rounded="lg"
-          elevation="0"
-        >
+        <v-card class="pa-0 card-wrap" light rounded="lg">
           <v-carousel
             height="300"
             hide-delimiter-background
-            cycle
-            style="border: 2px solid rgb(227, 227, 227); border-radius: 7px"
+            style="
+              border-bottom: 2px solid rgb(236, 236, 236);
+              background: rgb(59, 59, 59);
+            "
           >
             <v-carousel-item
               v-for="(image, imageIndex) in item.images"
@@ -24,8 +21,10 @@
           </v-carousel>
           <div class="pa-sm-5 pa-3">
             <v-row class="font-normal mb-3 mt-1 align-center">
-              <v-col class="py-1" cols="12" md="9" style="font-weight: 700">
-                {{ item.title }}
+              <v-col class="py-1" cols="12" md="9">
+                <b>
+                  {{ item.title }}
+                </b>
               </v-col>
               <v-col class="py-1 text-md-right" cols="12" md="3">{{
                 item.date
@@ -110,9 +109,22 @@ export default {
           title: "aa",
           date: "aaa",
           images: [
-            "/projects/bbb/aaa",
-            "/projects/bbb/aaa",
-            "/projects/bbb/aaa",
+            "/projects/bangkit/1.png",
+            "/projects/bangkit/1.png",
+            "/projects/bangkit/1.png",
+          ],
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "aaa",
+          link: "aaa",
+        },
+        {
+          title: "aa",
+          date: "aaa",
+          images: [
+            "/projects/bangkit/1.png",
+            "/projects/bangkit/1.png",
+            "/projects/bangkit/1.png",
           ],
           description: "aa",
           list: ["Raaa", "aaa"],
@@ -145,15 +157,25 @@ export default {
 }
 
 .card-wrap {
-  border: 2px solid rgb(236, 236, 236);
+  border: 1px solid rgba(187, 187, 187, 0.461);
   color: #1d3341;
+  box-shadow: none !important;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important; */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    6deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(225, 225, 225, 0.55) 64%,
+    rgba(26, 183, 146, 0.368) 100%
+  );
 }
-.card-hover-effect:hover {
+.card-wrap:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease;
   border: 2px solid #6bdab8;
 }
 .footer {
-  background: linear-gradient(45deg, rgb(249, 249, 249), rgb(227, 227, 227));
+  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(235, 235, 235));
 }
 </style>
