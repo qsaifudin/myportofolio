@@ -8,8 +8,8 @@
             height="300"
             hide-delimiter-background
             style="
-              border-bottom: 2px solid rgb(236, 236, 236);
-              background: rgb(59, 59, 59);
+              border-bottom: 1px solid rgb(216, 216, 216);
+              background: rgba(225, 225, 225, 0.55);
             "
           >
             <v-carousel-item
@@ -165,8 +165,8 @@ export default {
   background: linear-gradient(
     6deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 30%,
-    rgba(225, 225, 225, 0.55) 64%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(225, 225, 225, 0.55) 67%,
     rgba(26, 183, 146, 0.368) 100%
   );
 }
