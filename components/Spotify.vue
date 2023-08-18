@@ -31,7 +31,7 @@
           />
         </v-btn>
       </template>
-      <span>Just for fun</span>
+      <span>Have fun</span>
     </v-tooltip>
 
     <div

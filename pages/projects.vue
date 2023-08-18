@@ -5,7 +5,7 @@
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
         <v-card class="pa-0 card-wrap" light rounded="lg">
           <v-carousel
-            height="300"
+            :height="isMobile ? '150px' : '250px'"
             hide-delimiter-background
             style="
               border-bottom: 1px solid rgb(216, 216, 216);
@@ -16,7 +16,7 @@
               v-for="(image, imageIndex) in item.images"
               :key="imageIndex"
             >
-              <v-img :src="image"></v-img>
+              <v-img :src="image" cover></v-img>
             </v-carousel-item>
           </v-carousel>
           <div class="pa-sm-5 pa-3">
@@ -78,6 +78,7 @@ export default {
 
   data() {
     return {
+      isMobile: false,
       items: [
         {
           title: "(Bangkit 2023) Product Based Project - Expressify",
@@ -96,9 +97,9 @@ export default {
           title: "aa",
           date: "aaa",
           images: [
-            "/projects/gigi/1.png",
-            "/projects/gigi/2.png",
-            "/projects/gigi/3.png",
+            "/projects/lims/1.png",
+            "/projects/lims/2.png",
+            "/projects/lims/3.png",
           ],
           description: "aa",
           list: ["Raaa", "aaa"],
@@ -133,6 +134,14 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    this.checkMobile();
+  },
+  methods: {
+    checkMobile() {
+      this.isMobile = window.innerWidth <= 960; // Adjust the breakpoint as needed
+    },
   },
 };
 </script>
