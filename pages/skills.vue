@@ -16,7 +16,7 @@
           height="200px"
           rounded="lg"
           style="color: #1d3341"
-          elevation="4"
+          elevation="0"
         >
           <iconify-icon class="icon-container" width="50%" :icon="item.icon" />
           <div class="font-normal mt-4">
@@ -78,10 +78,21 @@ export default {
 <style scoped>
 .card-hover-effect {
   transition: box-shadow 0.3s ease;
+
+  background: linear-gradient(
+    10deg,
+    rgb(255, 255, 255),
+    rgba(225, 225, 225, 0.55)
+  );
+  border-radius: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; */
+
+  border: 1px solid rgba(187, 187, 187, 0.461);
 }
 .card-hover-effect:hover {
   transform: scale(1.04);
   transition: transform 0.3s ease;
   box-shadow: 0px 10px 15px -3px #05c491a4, 0px 4px 6px -2px #b10d0d74;
+  border: 2px solid #6bdab8;
 }
 </style>

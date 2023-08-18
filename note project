@@ -1,0 +1,26 @@
+Aplikasi mobile deteksi expresi wajah
+Saya bersama tim saya mengerjakan project milestone pada program "Bangkit Academy" led by Google, Tokopedia, Gojek, & Traveloka.
+
+- Role sebagai backend (express.js)
+- Membuat REST API untuk auth dengan jwt
+
+Sistem Informasi Laboratorium
+Merupakan aplikasi yang saya develep selama bekerja di Adamlabs - Wahana Gunilang Group
+
+- Fulltime sebagai frontend selama hampir 2 tahun
+- Membangun ulang sistem informasi versi baru
+- Beserta melakukan maintenance dan bug fixing pada sistem informasi versi lama
+- Tech stack Nuxtjs (vuejs), socket.io, jwt
+
+Sistem informasi medis untuk vendor
+tim project selama internship di Adamlabs - Wahana Gunilang Group
+
+- Membangun SI dengan teknologi baru bagi saya
+- Tech stack Nuxtjs (vuejs), express.js
+- Membuat
+
+Deteksi gigi menggunakan YOLO
+Merupakan service kecil untuk tugas akhir kuliah saya.
+
+- Tech stack flask (python), vuejs
+- Menggunakan YOLO untuk membuat model

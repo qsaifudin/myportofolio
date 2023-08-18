@@ -9,7 +9,12 @@
           rounded="lg"
           elevation="0"
         >
-          <v-carousel height="300">
+          <v-carousel
+            height="300"
+            hide-delimiter-background
+            cycle
+            style="border: 2px solid rgb(227, 227, 227); border-radius: 7px"
+          >
             <v-carousel-item
               v-for="(image, imageIndex) in item.images"
               :key="imageIndex"
@@ -41,7 +46,7 @@
               </ul>
             </div>
           </div>
-          <v-footer class="d-flex justify-end">
+          <v-footer class="d-flex justify-end footer">
             <div class="">
               <v-btn text rounded :href="item.github" target="_blank"
                 ><iconify-icon
@@ -140,13 +145,15 @@ export default {
 }
 
 .card-wrap {
-  border: 3px solid rgb(236, 236, 236);
+  border: 2px solid rgb(236, 236, 236);
   color: #1d3341;
 }
 .card-hover-effect:hover {
   transform: scale(1.02);
   transition: transform 0.3s ease;
-  border: 4px solid #6bdab8;
-  border-radius: 12px !important;
+  border: 2px solid #6bdab8;
+}
+.footer {
+  background: linear-gradient(45deg, rgb(249, 249, 249), rgb(227, 227, 227));
 }
 </style>
