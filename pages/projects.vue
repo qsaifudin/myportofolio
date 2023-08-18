@@ -5,6 +5,7 @@
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
         <v-card class="pa-0 card-wrap" light rounded="lg">
           <v-carousel
+            cycle
             :height="isMobile ? '150px' : '250px'"
             hide-delimiter-background
             style="
@@ -47,7 +48,7 @@
           </div>
           <v-footer class="d-flex justify-end footer">
             <div class="">
-              <v-btn text rounded :href="item.github" target="_blank"
+              <v-btn text rounded :href="item.github" target="_blank" :disabled="!item.github"
                 ><iconify-icon
                   icon="mdi:github"
                   width="20"
@@ -55,7 +56,7 @@
                   class="mr-1"
                 />{{ item.github ? "Github" : "None" }}</v-btn
               >
-              <v-btn text rounded :href="item.link" target="_blank"
+              <v-btn text rounded :href="item.link" target="_blank" :disabled="!item.link"
                 ><iconify-icon
                   icon="mdi:web"
                   width="20"
@@ -87,6 +88,7 @@ export default {
             "/projects/bangkit/1.png",
             "/projects/bangkit/2.png",
             "/projects/bangkit/3.png",
+            "/projects/bangkit/4.png",
           ],
           description: "aa",
           list: ["Raaa", "aaa"],
@@ -94,43 +96,83 @@ export default {
           link: "https://www.youtube.com/watch?v=Gpw-arXhlz4",
         },
         {
-          title: "aa",
+          title: "LIMS",
           date: "aaa",
           images: [
             "/projects/lims/1.png",
             "/projects/lims/2.png",
             "/projects/lims/3.png",
+            "/projects/lims/4.png",
           ],
           description: "aa",
           list: ["Raaa", "aaa"],
-          github: "aaa",
-          link: "aaa",
+          github: "https://github.com/qsaifudin/sim_lab",
+          link: "",
         },
         {
-          title: "aa",
+          title: "LIS",
           date: "aaa",
           images: [
-            "/projects/bangkit/1.png",
-            "/projects/bangkit/1.png",
-            "/projects/bangkit/1.png",
+            "/projects/lis/1.png",
+            "/projects/lis/2.png",
+            "/projects/lis/3.png",
+            "/projects/lis/4.png",
           ],
           description: "aa",
           list: ["Raaa", "aaa"],
-          github: "aaa",
-          link: "aaa",
+          github: "",
+          link: "",
         },
         {
-          title: "aa",
+          title: "tooth Detection",
           date: "aaa",
           images: [
-            "/projects/bangkit/1.png",
-            "/projects/bangkit/1.png",
-            "/projects/bangkit/1.png",
+            "/projects/gigi/1.png",
+            "/projects/gigi/2.png",
+            "/projects/gigi/3.png",
           ],
           description: "aa",
           list: ["Raaa", "aaa"],
-          github: "aaa",
-          link: "aaa",
+          github: "https://github.com/qsaifudin/tooth-detection-yolo",
+          link: "",
+        },
+        {
+          title: "Lomba",
+          date: "aaa",
+          images: [
+            "/projects/juara/1.png",
+            "/projects/juara/2.png",
+            "/projects/juara/3.png",
+            "/projects/juara/4.png",
+          ],
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "",
+          link: "https://www.youtube.com/watch?v=yF9PDKlP2pk&list=LL&index=106&t=22s",
+        },
+        {
+          title: "microlance",
+          date: "aaa",
+          images: ["/projects/microlance/1.png", "/projects/microlance/2.png"],
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "",
+          link: "https://www.instagram.com/microlance.id/",
+        },
+
+        {
+          title: "DTIK fest",
+          date: "aaa",
+          images: [
+            "/projects/dtik/1.png",
+            "/projects/dtik/2.png",
+            "/projects/dtik/3.png",
+            "/projects/dtik/4.png",
+          ],
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "",
+          link: "http://dtikfest.pusproset.com/",
         },
       ],
     };
