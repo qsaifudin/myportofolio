@@ -10,7 +10,7 @@
           <h1 class="animate-text myPrimary--text font-extrabold">
             Hello, I'm Saifudin!
           </h1>
-          <h2 class="secondary--text font-bold mb-5" style="font-size: 32px">
+          <h2 class="secondary--text mb-5 font-normal" style="font-size: 32px">
             Back-End Developer
           </h2>
           <div class="font-space-mono mt-2 mb-9">

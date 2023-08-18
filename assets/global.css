@@ -18,12 +18,6 @@
   font-weight: 800;
   src: url("@/static/fonts/OpenSans-ExtraBold.ttf") format("truetype");
 }
-/* @font-face {
-  font-family: "Open Sans";
-  src: url("@/static/fonts/OpenSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-} */
 
 .font-light {
   font-family: "Open Sans", sans-serif;

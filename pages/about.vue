@@ -166,7 +166,7 @@ export default {
 }
 
 .custom-rounded-btn {
-  border-radius: 10px; /* Adjust the value as needed */
+  border-radius: 8px; /* Adjust the value as needed */
 }
 
 .custom-icon-list {
