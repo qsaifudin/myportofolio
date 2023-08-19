@@ -98,7 +98,7 @@ export default {
       isMobile: false,
       items: [
         {
-          title: " Mobile Facial Mood Detection Application",
+          title: "Expressify -  Mobile Facial Mood Detection Application",
           tag: "Independent Study",
           date: "2023",
           images: [
@@ -169,7 +169,7 @@ export default {
             "/projects/gigi/3.png",
           ],
           description:
-            "Developed a simple tooth detection application as my final academic project. Still in the development",
+            "Developed a simple tooth detection application as my final academic project. Still in the development.",
           list: [
             "Utilized YOLO to create the model",
             "Tech stack: Flask (Python), Vue.js, Deep Learning (YOLO)",
@@ -178,7 +178,7 @@ export default {
           link: "",
         },
         {
-          title: "Website Awarded 2nd Place in Web Design Competition",
+          title: "CareMe - Website Awarded 2nd Place in Web Design Competition",
           tag: "Competition",
           date: "2020",
           images: [
@@ -187,18 +187,18 @@ export default {
 
             "/projects/juara/4.png",
           ],
-          description: "Collaborated with a team of 3 individuals",
+          description: "Collaborated with a team of 3 individuals.",
           list: ["Tech stack: Native HTML"],
           github: "",
           link: "https://www.youtube.com/watch?v=yF9PDKlP2pk&list=LL&index=106&t=22s",
         },
         {
-          title: "Freelancer Application",
+          title: "Microlance - Freelancer Application",
           tag: "Freelance",
           date: "2021",
           images: ["/projects/microlance/1.png", "/projects/microlance/2.png"],
           description:
-            "A freelance project developed by a team of 2 individuals",
+            "A freelance project developed by a team of 2 individuals.",
           list: ["Tech stack: Laravel, SQL"],
           github: "",
           link: "https://www.instagram.com/microlance.id/",
@@ -215,7 +215,7 @@ export default {
             "/projects/dtik/4.png",
           ],
           description:
-            "An academic project advanced by a team of 5 individuals",
+            "An academic project advanced by a team of 5 individuals.",
           list: [
             "Implemented Agile SDLC in the development process",
             "Tech stack: Laravel",
