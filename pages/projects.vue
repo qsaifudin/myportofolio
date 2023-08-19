@@ -97,7 +97,7 @@ export default {
           images: [
             "/projects/bangkit/1.png",
             "/projects/bangkit/2.png",
-            "/projects/bangkit/3.png",
+
             "/projects/bangkit/4.png",
           ],
           description: "aa",
@@ -106,26 +106,12 @@ export default {
           link: "https://www.youtube.com/watch?v=Gpw-arXhlz4",
         },
         {
-          title: "LIMS",
-          date: "aaa",
-          images: [
-            "/projects/lims/1.png",
-            "/projects/lims/2.png",
-            "/projects/lims/3.png",
-            "/projects/lims/4.png",
-          ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
-          github: "https://github.com/qsaifudin/sim_lab",
-          link: "",
-        },
-        {
           title: "LIS",
           date: "aaa",
           images: [
             "/projects/lis/1.png",
             "/projects/lis/2.png",
-            "/projects/lis/3.png",
+
             "/projects/lis/4.png",
           ],
           description: "aa",
@@ -133,6 +119,21 @@ export default {
           github: "",
           link: "",
         },
+        {
+          title: "LIMS",
+          date: "aaa",
+          images: [
+            "/projects/lims/1.png",
+            "/projects/lims/2.png",
+
+            "/projects/lims/4.png",
+          ],
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "https://github.com/qsaifudin/sim_lab",
+          link: "",
+        },
+
         {
           title: "tooth Detection",
           date: "aaa",
@@ -152,7 +153,7 @@ export default {
           images: [
             "/projects/juara/1.png",
             "/projects/juara/2.png",
-            "/projects/juara/3.png",
+
             "/projects/juara/4.png",
           ],
           description: "aa",
@@ -176,7 +177,7 @@ export default {
           images: [
             "/projects/dtik/1.png",
             "/projects/dtik/2.png",
-            "/projects/dtik/3.png",
+
             "/projects/dtik/4.png",
           ],
           description: "aa",
@@ -190,7 +191,7 @@ export default {
           images: [
             "/projects/aaa/1.png",
             "/projects/aaa/2.png",
-            "/projects/aaa/3.png",
+
             "/projects/aaa/4.png",
           ],
           description: "aa",
