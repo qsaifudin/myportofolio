@@ -5,7 +5,7 @@
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
         <v-card class="pa-0 card-wrap" light rounded="lg">
           <!-- <div class="label pa-2"></div> -->
-          <v-chip class="label" size="small">
+          <v-chip class="label px-2" size="small" style="height: 26px">
             {{ item.tag }}
           </v-chip>
           <!-- Your card content goes here -->
