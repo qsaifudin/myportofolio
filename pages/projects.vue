@@ -48,7 +48,12 @@
           </div>
           <v-footer class="d-flex justify-end footer">
             <div class="">
-              <v-btn text rounded :href="item.github" target="_blank" :disabled="!item.github"
+              <v-btn
+                text
+                rounded
+                :href="item.github"
+                target="_blank"
+                :disabled="!item.github"
                 ><iconify-icon
                   icon="mdi:github"
                   width="20"
@@ -56,7 +61,12 @@
                   class="mr-1"
                 />{{ item.github ? "Github" : "None" }}</v-btn
               >
-              <v-btn text rounded :href="item.link" target="_blank" :disabled="!item.link"
+              <v-btn
+                text
+                rounded
+                :href="item.link"
+                target="_blank"
+                :disabled="!item.link"
                 ><iconify-icon
                   icon="mdi:web"
                   width="20"
