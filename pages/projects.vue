@@ -184,6 +184,20 @@ export default {
           github: "",
           link: "http://dtikfest.pusproset.com/",
         },
+        {
+          title: "Soo your company",
+          date: "aaa",
+          images: [
+            "/projects/aaa/1.png",
+            "/projects/aaa/2.png",
+            "/projects/aaa/3.png",
+            "/projects/aaa/4.png",
+          ],
+          description: "aa",
+          list: ["Raaa", "aaa"],
+          github: "",
+          link: "",
+        },
       ],
     };
   },
