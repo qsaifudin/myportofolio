@@ -186,7 +186,7 @@ export default {
           link: "http://dtikfest.pusproset.com/",
         },
         {
-          title: "Soo your company",
+          title: "Soon your company",
           date: "aaa",
           images: [
             "/projects/aaa/1.png",
