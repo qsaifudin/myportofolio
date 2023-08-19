@@ -4,7 +4,7 @@
       v-if="error.statusCode === 404"
       class="text-center helvetica-bold font-extrabold mb-4"
     >
-      {{ pageNotFound }} mau kemana bray
+      {{ pageNotFound }}
     </h1>
     <h1 v-else>
       {{ otherError }}
