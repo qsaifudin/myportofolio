@@ -37,7 +37,7 @@
                 item.date
               }}</v-col>
             </v-row>
-            <div class="font-normal mt-3 text-justify">
+            <div class="font-normal mt-3">
               {{ item.description }}
               <ul class="custom-icon-list my-6">
                 <li v-for="(desc, descIndex) in item.list" :key="descIndex">
@@ -110,9 +110,9 @@ export default {
           description:
             'A project undertaken by a team of 6 individuals for a milestone within the "Bangkit Academy 2023" program, led by Google, Tokopedia, Gojek, & Traveloka.',
           list: [
-            "Role : Backend development",
+            "Role: Backend development",
             "Created a REST API for auth with jwt",
-            "Tech Stack : express.js, SQL, google cloud computing",
+            "Tech Stack: express.js, SQL, google cloud computing",
           ],
           github: "https://github.com/orgs/Expressify/repositories",
           link: "https://www.youtube.com/watch?v=Gpw-arXhlz4",
@@ -130,7 +130,7 @@ export default {
           description:
             "An application developed during my tenure at Adamlabs - Wahana Gunilang Group.",
           list: [
-            "Role : full-time as a frontend developer for nearly 2 years",
+            "Role: full-time as a frontend developer for nearly 2 years",
             "Rebuilt the system with a new version",
             "Conducted maintenance and bug fixing on the old version of the system",
             "Tech stack: Nuxtjs (Vue.js), socket.io, JWT",
@@ -151,9 +151,9 @@ export default {
           description:
             "A project undertaken by a team of 3 during an internship at Adamlabs - Wahana Gunilang Group.",
           list: [
-            "Role : Fullstack development",
+            "Role: Fullstack development",
             "Built an information system with new-to-me technologies",
-            "Tech stack : Nuxtjs (Vue.js), express.js, JWT, PostgreSQL",
+            "Tech stack: Nuxtjs (Vue.js), express.js, JWT, PostgreSQL",
           ],
           github: "https://github.com/qsaifudin/sim_lab",
           link: "",
