@@ -1,26 +1,51 @@
-Aplikasi mobile deteksi expresi wajah
-Saya bersama tim saya mengerjakan project milestone pada program "Bangkit Academy" led by Google, Tokopedia, Gojek, & Traveloka.
+Aplikasi mobile deteksi mood wajah
+2023
+project tim 6 orang untuk milestone pada program "Bangkit Academy 2023" led by Google, Tokopedia, Gojek, & Traveloka.
 
 - Role sebagai backend (express.js)
 - Membuat REST API untuk auth dengan jwt
+- Tech Stack : express.js, google cloud computing
 
 Sistem Informasi Laboratorium
-Merupakan aplikasi yang saya develep selama bekerja di Adamlabs - Wahana Gunilang Group
+2021 - 2022
+Merupakan aplikasi yang saya develop selama bekerja di Adamlabs - Wahana Gunilang Group
 
 - Fulltime sebagai frontend selama hampir 2 tahun
 - Membangun ulang sistem informasi versi baru
-- Beserta melakukan maintenance dan bug fixing pada sistem informasi versi lama
+- Melakukan maintenance dan bug fixing pada sistem informasi versi lama
 - Tech stack Nuxtjs (vuejs), socket.io, jwt
 
 Sistem informasi medis untuk vendor
-tim project selama internship di Adamlabs - Wahana Gunilang Group
+2021
+project tim 3 orang selama internship di Adamlabs - Wahana Gunilang Group
 
+- Role sebagai fullstack
 - Membangun SI dengan teknologi baru bagi saya
-- Tech stack Nuxtjs (vuejs), express.js
-- Membuat
+- Tech stack : Nuxtjs (vuejs), express.js, jwt, postgresql
 
 Deteksi gigi menggunakan YOLO
-Merupakan service kecil untuk tugas akhir kuliah saya.
+2023
+Membuat aplikasi simple untuk deteksi gigi sebagai tugas akhir kuliah saya
 
-- Tech stack flask (python), vuejs
 - Menggunakan YOLO untuk membuat model
+- Tech stack : flask (python), vuejs, Deep learning (YOLO)
+
+Website yang meraih juara 2 dalam perlombaan web desain
+2020
+Bekerjasama dengan 3 orang
+
+- Role sebagai fullstack
+- Tech stack : native html
+
+Aplikasi untuk freelancer
+2021
+project freelance yang dibuat oleh 2 orang
+
+- Tech stack : Laravel
+
+Aplikasi Project agile
+2021
+Project kuliah yang dikemabngkan oleh 5 orang
+
+- Mengimplementasikan SDLC Agile dalam pengembangan
+- Tech stack : Laravel

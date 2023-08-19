@@ -4,6 +4,11 @@
     <v-row class="font-normal mb-3 align-start mt-3">
       <v-col cols="12" md="6" v-for="(item, index) in items" :key="index">
         <v-card class="pa-0 card-wrap" light rounded="lg">
+          <!-- <div class="label pa-2"></div> -->
+          <v-chip class="label" size="small">
+            {{ item.tag }}
+          </v-chip>
+          <!-- Your card content goes here -->
           <v-carousel
             cycle
             :height="isMobile ? '150px' : '250px'"
@@ -11,6 +16,7 @@
             style="
               border-bottom: 1px solid rgb(216, 216, 216);
               background: rgba(225, 225, 225, 0.55);
+              border-radius: 7px 7px 0 0;
             "
           >
             <v-carousel-item
@@ -31,9 +37,9 @@
                 item.date
               }}</v-col>
             </v-row>
-            <div class="font-normal mt-3">
+            <div class="font-normal mt-3 text-justify">
               {{ item.description }}
-              <ul class="custom-icon-list mt-2">
+              <ul class="custom-icon-list my-6">
                 <li v-for="(desc, descIndex) in item.list" :key="descIndex">
                   <iconify-icon
                     icon="simple-line-icons:check"
@@ -92,110 +98,143 @@ export default {
       isMobile: false,
       items: [
         {
-          title: "(Bangkit 2023) Product Based Project - Expressify",
-          date: "Juni 2023",
+          title: " Mobile Facial Mood Detection Application",
+          tag: "Independent Study",
+          date: "2023",
           images: [
             "/projects/bangkit/1.png",
             "/projects/bangkit/2.png",
 
             "/projects/bangkit/4.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description:
+            'A project undertaken by a team of 6 individuals for a milestone within the "Bangkit Academy 2023" program, led by Google, Tokopedia, Gojek, & Traveloka.',
+          list: [
+            "Role : Backend development",
+            "Created a REST API for auth with jwt",
+            "Tech Stack : express.js, SQL, google cloud computing",
+          ],
           github: "https://github.com/orgs/Expressify/repositories",
           link: "https://www.youtube.com/watch?v=Gpw-arXhlz4",
         },
         {
-          title: "LIS",
-          date: "aaa",
+          title: " Laboratory Information Systems",
+          tag: "Full Time",
+          date: "2021 - 2022",
           images: [
             "/projects/lis/1.png",
             "/projects/lis/2.png",
 
             "/projects/lis/4.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description:
+            "An application developed during my tenure at Adamlabs - Wahana Gunilang Group.",
+          list: [
+            "Role : full-time as a frontend developer for nearly 2 years",
+            "Rebuilt the system with a new version",
+            "Conducted maintenance and bug fixing on the old version of the system",
+            "Tech stack: Nuxtjs (Vue.js), socket.io, JWT",
+          ],
           github: "",
           link: "",
         },
         {
-          title: "LIMS",
-          date: "aaa",
+          title: "Medical Information System for Vendors",
+          tag: "Internship",
+          date: "2021",
           images: [
             "/projects/lims/1.png",
             "/projects/lims/2.png",
 
             "/projects/lims/4.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description:
+            "A project undertaken by a team of 3 during an internship at Adamlabs - Wahana Gunilang Group.",
+          list: [
+            "Role : Fullstack development",
+            "Built an information system with new-to-me technologies",
+            "Tech stack : Nuxtjs (Vue.js), express.js, JWT, PostgreSQL",
+          ],
           github: "https://github.com/qsaifudin/sim_lab",
           link: "",
         },
 
         {
-          title: "tooth Detection",
-          date: "aaa",
+          title: "Simple App for Teeth Detection",
+          tag: "College Final Project",
+          date: "2023",
           images: [
             "/projects/gigi/1.png",
             "/projects/gigi/2.png",
             "/projects/gigi/3.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description:
+            "Developed a simple tooth detection application as my final academic project. Still in the development",
+          list: [
+            "Utilized YOLO to create the model",
+            "Tech stack: Flask (Python), Vue.js, Deep Learning (YOLO)",
+          ],
           github: "https://github.com/qsaifudin/tooth-detection-yolo",
           link: "",
         },
         {
-          title: "Lomba",
-          date: "aaa",
+          title: "Website Awarded 2nd Place in Web Design Competition",
+          tag: "Competition",
+          date: "2020",
           images: [
             "/projects/juara/1.png",
             "/projects/juara/2.png",
 
             "/projects/juara/4.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description: "Collaborated with a team of 3 individuals",
+          list: ["Tech stack: Native HTML"],
           github: "",
           link: "https://www.youtube.com/watch?v=yF9PDKlP2pk&list=LL&index=106&t=22s",
         },
         {
-          title: "microlance",
-          date: "aaa",
+          title: "Freelancer Application",
+          tag: "Freelance",
+          date: "2021",
           images: ["/projects/microlance/1.png", "/projects/microlance/2.png"],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description:
+            "A freelance project developed by a team of 2 individuals",
+          list: ["Tech stack: Laravel, SQL"],
           github: "",
           link: "https://www.instagram.com/microlance.id/",
         },
 
         {
-          title: "DTIK fest",
-          date: "aaa",
+          title: "DTIK fest - Agile Project Application",
+          tag: "college project",
+          date: "2021",
           images: [
             "/projects/dtik/1.png",
             "/projects/dtik/2.png",
 
             "/projects/dtik/4.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description:
+            "An academic project advanced by a team of 5 individuals",
+          list: [
+            "Implemented Agile SDLC in the development process",
+            "Tech stack: Laravel",
+          ],
           github: "",
           link: "http://dtikfest.pusproset.com/",
         },
         {
           title: "Soon your company",
-          date: "aaa",
+          tag: "Soon",
+          date: "soon",
           images: [
             "/projects/aaa/1.png",
             "/projects/aaa/2.png",
 
             "/projects/aaa/4.png",
           ],
-          description: "aa",
-          list: ["Raaa", "aaa"],
+          description: "",
+          list: [],
           github: "",
           link: "",
         },
@@ -253,5 +292,15 @@ export default {
 }
 .footer {
   background: linear-gradient(45deg, rgb(255, 255, 255), rgb(235, 235, 235));
+}
+.label {
+  position: absolute;
+  /* font-weight: lighter; */
+  top: 10px;
+  left: 10px;
+  background-color: #10a08a !important; /* Set your desired background color */
+  color: white; /* Set your desired text color */
+  border: 1px solid white;
+  z-index: 100;
 }
 </style>
