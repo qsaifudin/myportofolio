@@ -301,6 +301,6 @@ export default {
   background-color: #10a08a !important; /* Set your desired background color */
   color: white; /* Set your desired text color */
   border: 1px solid white;
-  z-index: 100;
+  z-index: 2;
 }
 </style>
