@@ -206,7 +206,7 @@ export default {
 
         {
           title: "DTIK fest - Agile Project Application",
-          tag: "college project",
+          tag: "College Project",
           date: "2021",
           images: [
             "/projects/dtik/1.png",
