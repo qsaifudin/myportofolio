@@ -18,7 +18,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     // link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
-    link: [{ rel: "icon", type: "image/png", href: "favicon.png" }],
+    link: [{ rel: "icon", type: "image/png", href: "favicon.png?v3" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -48,7 +48,7 @@ export default {
       lang: "en",
     },
     icon: {
-      fileName: "favicon.png",
+      fileName: "favicon.png?v3",
     },
   },
 
