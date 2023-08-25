@@ -47,6 +47,9 @@ export default {
     manifest: {
       lang: "en",
     },
+    icon: {
+      fileName: "favicon.png",
+    },
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
