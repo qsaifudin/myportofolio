@@ -49,7 +49,6 @@
           /></v-btn>
         </div>
       </v-col>
-      <!-- <v-col cols="12" md="1"></v-col> -->
       <v-col cols="12" md="5">
         <v-form v-model="valid" @submit.prevent="sendEmail" ref="emailForm">
           <v-text-field
@@ -124,7 +123,6 @@ export default {
       name: "",
       email: "",
       message: "",
-      valid: true,
       valid: true,
       rules: [(v) => !!v || "Please fill in this field"],
       emailRules: [
