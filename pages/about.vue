@@ -106,7 +106,7 @@
               outlined
               block
               class="pa-6 px-11 custom-rounded-btn font-normal"
-              href="Saifudin - Resume.pdf"
+              href="/Saifudin - Resume.pdf"
               target="_blank"
             >
               <span style="font-size: 15px"> SEE MY CV </span></v-btn
@@ -130,8 +130,8 @@ export default {
   computed: {
     imageSrc() {
       return this.$vuetify.theme.dark
-        ? "myfoto/me2-dark.png"
-        : "myfoto/me2.png";
+        ? "/myfoto/me2-dark.png"
+        : "/myfoto/me2.png";
     },
     paddingClass() {
       return this.$vuetify.breakpoint.smAndDown ? "pa-6" : "pl-2 pr-6";
