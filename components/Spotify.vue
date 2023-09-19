@@ -67,7 +67,7 @@ export default {
       await this.getToken();
       setInterval(this.getToken, 60000 * 55);
       await this.fetchCurrentlyPlaying();
-      this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 60000);
+      this.fetchInterval = setInterval(this.fetchCurrentlyPlaying, 20000);
     } catch (error) {}
   },
   mounted() {
