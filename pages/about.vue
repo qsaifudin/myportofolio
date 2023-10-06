@@ -32,10 +32,9 @@
           </v-col>
         </v-row>
         <div>
-          I am currently in my last year of studying Informatics Engineering and
-          have around 2 years of work experience. My main interest and focus
-          right now is backend development because I enjoy logical
-          problem-solving. <br /><br />
+          I am a professional developer with 2 years of work experience. My main
+          interest and focus right now is backend development because I enjoy
+          logical problem-solving. <br /><br />
           I have a strong desire to learn new things, work well in teams, and
           have an easy-going attitude. If you believe there's a way I can
           contribute, I am open and excited about the possibilities you might
