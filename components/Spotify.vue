@@ -118,7 +118,7 @@ export default {
       // this.token =
       //   "BQCxogov3uA5AOFMyY7B2NG8VV23GZzLWq4uiBy4sot0XrAOrMPT7Quq7GACVI5tqAeLU2PqweGOPhGI5ZqwpmFQkOPRGGs46RVwhhDmEspvOdrEFfbl15j1MvVygQfEFKF7rqmRRHBoV5dKTOlaW4KrXwpd4xkT8D9T422yKYTrvSxBA5TED1E7rqdJLjEQGvrzGOMZKC8w2cKWGn_G";
       let url = "https://api.spotify.com/v1/me/player";
-      this.currentlyPlaying = null;
+      // this.currentlyPlaying = null;
       try {
         const response = await axios.get(url, {
           headers: {
