@@ -10,15 +10,29 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "Saifudin ",
-    title: "Saifudin",
+    title: "Saifudin | Backend Developer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "I am a professional developer with 2 years of work experience. My main interest and focus right now is backend development because I enjoy logical problem-solving.",
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "qsaifudin, https://qsaifudin.site, Software Developer, Backend Developer, Web Developer, JavaScript, PHP, Python, Portfolio, Projects",
+      },
       { name: "format-detection", content: "telephone=no" },
     ],
     // link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
-    link: [{ rel: "icon", type: "image/png", href: "favicon.png?v3" }],
+    link: [
+      { rel: "icon", type: "image/png", href: "favicon.png?v3" },
+      { rel: "image", href: "favicon.png" },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
