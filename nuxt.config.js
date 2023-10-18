@@ -26,6 +26,18 @@ export default {
           "qsaifudin, https://qsaifudin.site, Software Developer, Backend Developer, Web Developer, JavaScript, PHP, Python, Portfolio, Projects",
       },
       { name: "format-detection", content: "telephone=no" },
+      {
+        property: "og:title",
+        content: "Saifudin | Backend Developer",
+      },
+      {
+        property: "og:site_name",
+        content: "qsaifudin",
+      },
+      {
+        property: "og:image",
+        content: "https://qsaifudin.site/favicon.png", // Replace with the URL of your image
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
   },
