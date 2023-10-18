@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "Saifudin ",
+    titleTemplate: "Saifudin Backend Developer",
     title: "Saifudin | Backend Developer",
     meta: [
       { charset: "utf-8" },
