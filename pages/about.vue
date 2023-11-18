@@ -105,7 +105,7 @@
               outlined
               block
               class="pa-6 px-11 custom-rounded-btn font-normal"
-              href="/Saifudin - Resume v1.pdf"
+              href="/Saifudin - Resume v2.pdf"
               target="_blank"
             >
               <span style="font-size: 15px"> SEE MY CV </span></v-btn
