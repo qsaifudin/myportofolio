@@ -96,7 +96,7 @@
               href="https://www.linkedin.com/in/qsaifudin/"
               target="_blank"
               ><iconify-icon width="20" icon="mdi:linkedin" class="mr-1" />
-              <span style="font-size: 15px"> SEE MY RESUME ON LINKEDI </span>
+              <span style="font-size: 15px"> SEE MY RESUME ON LINKEDIN </span>
             </v-btn>
           </v-col>
           <v-col cols="12" md="6">
