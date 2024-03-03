@@ -11,7 +11,8 @@
             Hello, I'm Saifudin!
           </h1>
           <h2 class="secondary--text mb-5 font-normal" style="font-size: 32px">
-            Back-End Developer
+            <!-- Back-End Developer -->
+            Software Engineer
           </h2>
           <div class="font-space-mono mt-2 mb-9">
             <div class="">Stay curious, keep learning and keep growing.</div>

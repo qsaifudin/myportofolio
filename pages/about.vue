@@ -32,56 +32,46 @@
           </v-col>
         </v-row>
         <div>
-          I am a professional developer with 2 years of work experience. My main
-          interest and focus right now is backend development because I enjoy
+          I am a professional developer with more than 2 years of work experience. My main
+          interest and focus right now is Software Engineer because I enjoy
           logical problem-solving. <br /><br />
           I have a strong desire to learn new things, work well in teams, and
           have an easy-going attitude. If you believe there's a way I can
           contribute, I am open and excited about the possibilities you might
           have to offer!
         </div>
+        <!-- Your experience section -->
         <div class="mt-6">
-          <div class="secondary--text"><b>My Experience</b></div>
+          <div class="secondary--text"><b>Profesional Experience</b></div>
           <div class="mt-2">
             <ul class="custom-icon-list">
-              <li>
+              <!-- Iterate over experiences array -->
+              <li v-for="(experience, index) in experiences" :key="index">
                 <iconify-icon
                   icon="simple-line-icons:check"
                   width="20"
                   height="20"
                   class="bullet-icon"
                 />
-                I completed an internship as a developer, which was later
-                extended to a full-time position for nearly 2 years.
+                {{ experience.text }}
               </li>
-              <li>
+            </ul>
+          </div>
+        </div>
+        <!-- Your experience section -->
+        <div class="mt-6">
+          <div class="secondary--text"><b>Non-Profesional Experience</b></div>
+          <div class="mt-2">
+            <ul class="custom-icon-list">
+              <!-- Iterate over experiences array -->
+              <li v-for="(experience, index) in experiencesNon" :key="index">
                 <iconify-icon
                   icon="simple-line-icons:check"
                   width="20"
                   height="20"
                   class="bullet-icon"
                 />
-                I earned a certificate of completion in cloud computing through
-                a program led by Google, Tokopedia, Gojek, and Traveloka.
-              </li>
-              <li>
-                <iconify-icon
-                  icon="simple-line-icons:check"
-                  width="20"
-                  height="20"
-                  class="bullet-icon"
-                />
-                I achieved the second place in a national-level web design
-                competition.
-              </li>
-              <li>
-                <iconify-icon
-                  icon="simple-line-icons:check"
-                  width="20"
-                  height="20"
-                  class="bullet-icon"
-                />
-                And much more.
+                {{ experience.text }}
               </li>
             </ul>
           </div>
@@ -124,6 +114,36 @@
 export default {
   head: {
     title: "About", // Set the title specific to this route
+  },
+  data() {
+    return {
+      experiences: [
+        {
+          text: "Freelance backend developer at Javamifi for 3 months.",
+        },
+        {
+          text: "Freelance full-stack developer twice at Texio.id, totaling 4 months.",
+        },
+        {
+          text: "Worked as a full-time junior developer at Wahana Gumilang for 1 year and 4 months.",
+        },
+        {
+          text: "Internship as a full-stack developer at Wahana Gumilang for 3 months.",
+        },
+      ],
+      experiencesNon: [
+
+        {
+          text: "I earned a certificate of completion in cloud computing through a program led by Google, Tokopedia, Gojek, and Traveloka.",
+        },
+        {
+          text: "I achieved the second place in a national-level web design competition.",
+        },
+        {
+          text: "Communication and Information Staff of Forum Mahasiswa Ronggolawe Tuban",
+        },
+      ],
+    };
   },
 
   computed: {
