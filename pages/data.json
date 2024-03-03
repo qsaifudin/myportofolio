@@ -1,0 +1,193 @@
+[
+  {
+    "title": "Javamifi Injection System",
+    "tag": "Freelance",
+    "date": "2024",
+    "images": [
+      "/projects/javamifi/1.png"
+    ],
+    "description": "ss",
+    "list": [
+      "Role: Backend development",
+      "ddd",
+      { "tech_stack": ["Nodejs", "SQL", "Zeptomail"] }
+    ],
+    "github": "",
+    "link": "https://www.javamifi.com/"
+  },
+  {
+    "tag": "Personal Project",
+    "images": [
+      "/projects/knowledge/1.png",
+      "/projects/knowledge/2.png",
+      "/projects/knowledge/3.png"
+    ],
+    "date": "2024",
+    "title": "Knowledge Graph Using LLM, Azure OpenAi",
+    "description": "The Knowledge Graph App is designed to provide information based on user queries and visualize the data in the form of a knowledge graph.",
+    "list": [
+      {
+        "tech_stack": ["LLM", "Azure OpenAi", "Nodejs", "Neo4j", "VueJs/Nuxtjs"]
+      }
+    ],
+    "github": "https://github.com/qsaifudin/knwoledge-graph-openai.git",
+    "link_video":"https://www.youtube.com/embed/cNWrqlrbXac"
+  },
+  {
+    "title": "Auto Send Email",
+    "tag": "Personal Project",
+    "date": "2024",
+    "images": [
+      "/projects/email/1.png",
+      "/projects/email/2.png",
+      "/projects/email/3.png"
+    ],
+    "description": "This simple application is able to serve a POST endpoint. The main function of the endpoint is to store in the database an email for a particular group of recipients. The emails are then to be sent automatically at a later time",
+    "list": [{ "tech_stack": ["Python/Flask", "Vuejs/Nuxtjs", "SQLite"] }],
+    "github": "https://github.com/qsaifudin/flask-email-scheduler.git",
+    "link_video": "https://www.youtube.com/embed/-PzklWyQxAI"
+  },
+  {
+    "title": "Simple Healthcare Treatment Entry System",
+    "tag": "Personal Project",
+    "date": "2024",
+    "images": [
+      "/projects/treatment/1.png",
+      "/projects/treatment/2.png",
+      "/projects/treatment/3.png"
+    ],
+    "description": "This system provides a platform for managing healthcare treatment entries, allowing users to perform CRUD operations via API and manage entries through a user-friendly frontend interface.",
+    "list": [{ "tech_stack": ["Nodejs", "Reactjs/Nextjs", "NextUi","Firestore"] }],
+    "github": "https://github.com/qsaifudin/nodejs-nextjs-simple-healthcare-treatment-entry-system.git",
+    "link_video": "https://www.youtube.com/embed/9Ce4MHsSnbc"
+  },
+  {
+    "title": "Online Library Borrowing System",
+    "tag": "Personal Project",
+    "date": "2024",
+    "images": [
+      "/projects/borrowing/1.png",
+      "/projects/borrowing/2.png",
+      "/projects/borrowing/3.png"
+    ],
+    "description": "This web application designed to manage an online library's borrowing system. It provides functionalities for users to register, login, borrow books, and for admins to track borrowing activities and manage books.",
+    "list": [{ "tech_stack": ["Java Spring Boot", "VueJs/Nuxtjs", "PostgreSQL"] }],
+    "github": "https://github.com/qsaifudin/java-postgresql-online-library.git",
+    "link_video": "https://www.youtube.com/embed/DqDnsQAV22I"
+  },
+
+  {
+    "title": "Expressify -  Mobile Facial Mood Detection Application",
+    "tag": "Independent Study",
+    "date": "2023",
+    "images": [
+      "/projects/bangkit/1.png",
+      "/projects/bangkit/2.png",
+      "/projects/bangkit/4.png"
+    ],
+    "description": "A project undertaken by a team of 6 individuals for a milestone within the \"Bangkit Academy 2023\" program, led by Google, Tokopedia, Gojek, & Traveloka.",
+    "list": [
+      "Role: Backend development",
+      "Created a REST API for auth with jwt",
+      { "tech_stack": ["express.js", "SQL", "google cloud computing"] }
+    ],
+    "github": "https://github.com/orgs/Expressify/repositories",
+    "link_video": "https://www.youtube.com/embed/Gpw-arXhlz4"
+  },
+  {
+    "title": "Simple App for Teeth Detection",
+    "tag": "College Final Project",
+    "date": "2023",
+    "images": [
+      "/projects/gigi/1.png",
+      "/projects/gigi/2.png",
+      "/projects/gigi/3.png"
+    ],
+    "description": "Developed a simple tooth detection application as my final academic project. Still in the development.",
+    "list": [
+      "Utilized YOLO to create the model",
+      {
+        "tech_stack": ["Python/Python", "VueJs/Nuxtjs", "Deep Learning (YOLO)"]
+      }
+    ],
+    "github": "https://github.com/qsaifudin/tooth-detection-yolo",
+    "link": ""
+  },
+  {
+    "title": " Laboratory Information Systems",
+    "tag": "Full Time",
+    "date": "2021 - 2023",
+    "images": [
+      "/projects/lis/1.png",
+      "/projects/lis/2.png",
+      "/projects/lis/4.png"
+    ],
+    "description": "An application developed during my tenure at Adamlabs - Wahana Gunilang Group.",
+    "list": [
+      "Role: full-time as a frontend developer for nearly 2 years",
+      "Rebuilt the system with a new version",
+      "Conducted maintenance and bug fixing on the old version of the system",
+      { "tech_stack": ["VueJs/Nuxtjs", "socket.io", "JWT"] }
+    ],
+    "github": "",
+    "link": ""
+  },
+  {
+    "title": "Medical Information System for Vendors",
+    "tag": "Internship",
+    "date": "2021",
+    "images": [
+      "/projects/lims/1.png",
+      "/projects/lims/2.png",
+      "/projects/lims/4.png"
+    ],
+    "description": "A project undertaken by a team of 3 during an internship at Adamlabs - Wahana Gunilang Group.",
+    "list": [
+      "Role: Fullstack development",
+      "Built an information system with new-to-me technologies",
+      {
+        "tech_stack": ["Nodejs", "JWT", "PostgreSQL","VueJs/Nuxtjs"]
+      }
+    ],
+    "github": "https://github.com/qsaifudin/sim_lab",
+    "link": ""
+  },
+  {
+    "title": "CareMe - Website Awarded 2nd Place in Web Design Competition",
+    "tag": "Competition",
+    "date": "2020",
+    "images": [
+      "/projects/juara/1.png",
+      "/projects/juara/2.png",
+      "/projects/juara/4.png"
+    ],
+    "description": "Collaborated with a team of 3 individuals.",
+    "list": [{ "tech_stack": ["Native HTML"] }],
+    "github": "",
+    "link_video": "https://www.youtube.com/embed/yF9PDKlP2pk"
+  },
+  {
+    "title": "Microlance - Freelancer Application",
+    "tag": "Freelance",
+    "date": "2021",
+    "images": ["/projects/microlance/1.png", "/projects/microlance/2.png"],
+    "description": "A freelance project developed by a team of 2 individuals.",
+    "list": [{ "tech_stack": ["Laravel", "SQL"] }],
+    "github": "",
+    "link": "https://www.instagram.com/microlance.id/"
+  },
+  {
+    "title": "DTIK fest - Agile Project Application",
+    "tag": "College Project",
+    "date": "2021",
+    "images": [
+      "/projects/dtik/1.png",
+      "/projects/dtik/2.png",
+      "/projects/dtik/4.png"
+    ],
+    "description": "An academic project advanced by a team of 5 individuals.",
+    "list": [{ "tech_stack": ["Laravel"] }],
+    "github": "",
+    "link": "http://dtikfest.pusproset.com/"
+  }
+]

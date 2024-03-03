@@ -41,19 +41,42 @@
               {{ item.description }}
               <ul class="custom-icon-list my-6">
                 <li v-for="(desc, descIndex) in item.list" :key="descIndex">
-                  <iconify-icon
-                    icon="simple-line-icons:check"
-                    width="20"
-                    height="20"
-                    class="bullet-icon"
-                  />
-                  {{ desc }}
+                  <div v-if="typeof desc === 'string'">
+                    <iconify-icon
+                      icon="simple-line-icons:check"
+                      width="20"
+                      height="20"
+                      class="bullet-icon"
+                    />
+                    {{ desc }}
+                  </div>
+
+                  <div v-else-if="typeof desc === 'object' && desc.tech_stack">
+                    <div class="mt-1 mb-1">
+                      <iconify-icon
+                        icon="simple-line-icons:check"
+                        width="20"
+                        height="20"
+                        class="bullet-icon"
+                      />Tech Stack:
+                    </div>
+                    <div class="ml-4">
+                      <v-chip
+                        v-for="(tech, index) in desc.tech_stack"
+                        :key="index"
+                        color="primary"
+                        class="ml-2 mt-2"
+                      >
+                        {{ tech }}
+                      </v-chip>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
           <v-footer class="d-flex justify-end footer">
-            <div class="">
+            <div class="d-flex">
               <v-btn
                 text
                 rounded
@@ -68,11 +91,12 @@
                 />{{ item.github ? "Github" : "None" }}</v-btn
               >
               <v-btn
+                v-if="item.link !== undefined"
                 text
                 rounded
                 :href="item.link"
                 target="_blank"
-                :disabled="!item.link"
+                :disabled="item.link"
                 ><iconify-icon
                   icon="mdi:web"
                   width="20"
@@ -80,6 +104,7 @@
                   class="mr-1"
                 />{{ item.link ? "Link" : "None" }}</v-btn
               >
+              <DialogProject  v-if="item.link_video" :link_video="item.link_video" :title="item.title"/>
             </div>
           </v-footer>
         </v-card>
@@ -88,6 +113,7 @@
   </v-container>
 </template>
 <script>
+import itemsData from "./data.json"
 export default {
   head: {
     title: "Projects", // Set the title specific to this route
@@ -96,149 +122,7 @@ export default {
   data() {
     return {
       isMobile: false,
-      items: [
-        {
-          title: "Expressify -  Mobile Facial Mood Detection Application",
-          tag: "Independent Study",
-          date: "2023",
-          images: [
-            "/projects/bangkit/1.png",
-            "/projects/bangkit/2.png",
-
-            "/projects/bangkit/4.png",
-          ],
-          description:
-            'A project undertaken by a team of 6 individuals for a milestone within the "Bangkit Academy 2023" program, led by Google, Tokopedia, Gojek, & Traveloka.',
-          list: [
-            "Role: Backend development",
-            "Created a REST API for auth with jwt",
-            "Tech Stack: express.js, SQL, google cloud computing",
-          ],
-          github: "https://github.com/orgs/Expressify/repositories",
-          link: "https://www.youtube.com/watch?v=Gpw-arXhlz4",
-        },
-        {
-          title: " Laboratory Information Systems",
-          tag: "Full Time",
-          date: "2021 - 2022",
-          images: [
-            "/projects/lis/1.png",
-            "/projects/lis/2.png",
-
-            "/projects/lis/4.png",
-          ],
-          description:
-            "An application developed during my tenure at Adamlabs - Wahana Gunilang Group.",
-          list: [
-            "Role: full-time as a frontend developer for nearly 2 years",
-            "Rebuilt the system with a new version",
-            "Conducted maintenance and bug fixing on the old version of the system",
-            "Tech stack: Nuxtjs (Vue.js), socket.io, JWT",
-          ],
-          github: "",
-          link: "",
-        },
-        {
-          title: "Medical Information System for Vendors",
-          tag: "Internship",
-          date: "2021",
-          images: [
-            "/projects/lims/1.png",
-            "/projects/lims/2.png",
-
-            "/projects/lims/4.png",
-          ],
-          description:
-            "A project undertaken by a team of 3 during an internship at Adamlabs - Wahana Gunilang Group.",
-          list: [
-            "Role: Fullstack development",
-            "Built an information system with new-to-me technologies",
-            "Tech stack: Nuxtjs (Vue.js), express.js, JWT, PostgreSQL",
-          ],
-          github: "https://github.com/qsaifudin/sim_lab",
-          link: "",
-        },
-
-        {
-          title: "Simple App for Teeth Detection",
-          tag: "College Final Project",
-          date: "2023",
-          images: [
-            "/projects/gigi/1.png",
-            "/projects/gigi/2.png",
-            "/projects/gigi/3.png",
-          ],
-          description:
-            "Developed a simple tooth detection application as my final academic project. Still in the development.",
-          list: [
-            "Utilized YOLO to create the model",
-            "Tech stack: Flask (Python), Vue.js, Deep Learning (YOLO)",
-          ],
-          github: "https://github.com/qsaifudin/tooth-detection-yolo",
-          link: "",
-        },
-        {
-          title: "CareMe - Website Awarded 2nd Place in Web Design Competition",
-          tag: "Competition",
-          date: "2020",
-          images: [
-            "/projects/juara/1.png",
-            "/projects/juara/2.png",
-
-            "/projects/juara/4.png",
-          ],
-          description: "Collaborated with a team of 3 individuals.",
-          list: ["Tech stack: Native HTML"],
-          github: "",
-          link: "https://www.youtube.com/watch?v=yF9PDKlP2pk&list=LL&index=106&t=22s",
-        },
-        {
-          title: "Microlance - Freelancer Application",
-          tag: "Freelance",
-          date: "2021",
-          images: ["/projects/microlance/1.png", "/projects/microlance/2.png"],
-          description:
-            "A freelance project developed by a team of 2 individuals.",
-          list: ["Tech stack: Laravel, SQL"],
-          github: "",
-          link: "https://www.instagram.com/microlance.id/",
-        },
-
-        {
-          title: "DTIK fest - Agile Project Application",
-          tag: "College Project",
-          date: "2021",
-          images: [
-            "/projects/dtik/1.png",
-            "/projects/dtik/2.png",
-
-            "/projects/dtik/4.png",
-          ],
-          description:
-            "An academic project advanced by a team of 5 individuals.",
-          list: [
-            "Implemented Agile SDLC in the development process",
-            "Tech stack: Laravel",
-          ],
-          github: "",
-          link: "http://dtikfest.pusproset.com/",
-        },
-        {
-          title: "Soon your company",
-          tag: "Soon",
-          date: "soon",
-          images: [
-            "/projects/aaa/1.png",
-            "/projects/aaa/2.png",
-
-            "/projects/aaa/4.png",
-          ],
-          description: "",
-          list: [],
-          github: "",
-          link: "",
-        },
-      ],
+      items:itemsData
     };
   },
   mounted() {
