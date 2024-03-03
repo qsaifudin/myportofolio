@@ -4,12 +4,14 @@
     "tag": "Freelance",
     "date": "2024",
     "images": [
-      "/projects/javamifi/1.png"
+      "/projects/javamifi/1.png",
+      "/projects/javamifi/2.png"
     ],
-    "description": "ss",
+    "description": "A feature used for injecting data into the SIM card based on the vendor.",
     "list": [
       "Role: Backend development",
-      "ddd",
+      "Create a REST API for ordering data from several vendors.",
+      "Create a scheduler module and send emails.",
       { "tech_stack": ["Nodejs", "SQL", "Zeptomail"] }
     ],
     "github": "",

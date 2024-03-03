@@ -58,7 +58,8 @@
                         width="20"
                         height="20"
                         class="bullet-icon"
-                      />Tech Stack:
+                      />
+                      Tech Stack:
                     </div>
                     <div class="ml-4">
                       <v-chip
@@ -96,7 +97,7 @@
                 rounded
                 :href="item.link"
                 target="_blank"
-                :disabled="item.link"
+                :disabled="!item.link"
                 ><iconify-icon
                   icon="mdi:web"
                   width="20"
