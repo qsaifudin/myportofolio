@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "Saifudin | Backend Developer",
-    title: "Saifudin | Backend Developer",
+    titleTemplate: "Saifudin | Software Engineer",
+    title: "Saifudin | Software Engineer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -18,18 +18,18 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "I am a professional developer with 2 years of work experience. My main interest and focus right now is backend development because I enjoy logical problem-solving.",
+          "I am a professional developer more than 2 years of work experience. My main interest and focus right now is Software Engineer because I enjoy logical problem-solving.",
       },
       {
         hid: "keywords",
         name: "keywords",
         content:
-          "qsaifudin, https://qsaifudin.site, Software Developer, Backend Developer, Web Developer, JavaScript, PHP, Python, Portfolio, Projects",
+          "qsaifudin, https://qsaifudin.site, Software Developer, Software Engineer, Web Developer, JavaScript, PHP, Python, Portfolio, Projects",
       },
       { name: "format-detection", content: "telephone=no" },
       {
         property: "og:title",
-        content: "Saifudin | Backend Developer",
+        content: "Saifudin | Software Engineer",
       },
       {
         property: "og:site_name",
