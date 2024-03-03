@@ -114,7 +114,7 @@
   </v-container>
 </template>
 <script>
-import itemsData from "./data.json"
+import itemsData from "./project.json"
 export default {
   head: {
     title: "Projects", // Set the title specific to this route

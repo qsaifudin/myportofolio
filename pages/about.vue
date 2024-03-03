@@ -95,7 +95,7 @@
               outlined
               block
               class="pa-6 px-11 custom-rounded-btn font-normal"
-              href="/Saifudin - Resume v2.pdf"
+              href="/Saifudin - Resume Developer v5.pdf"
               target="_blank"
             >
               <span style="font-size: 15px"> SEE MY CV </span></v-btn
@@ -111,38 +111,15 @@
   </v-container>
 </template>
 <script>
+import {experiences,experiencesNon} from "./about.json"
 export default {
   head: {
     title: "About", // Set the title specific to this route
   },
   data() {
     return {
-      experiences: [
-        {
-          text: "Freelance backend developer at Javamifi for 3 months.",
-        },
-        {
-          text: "Freelance full-stack developer twice at Texio.id, totaling 4 months.",
-        },
-        {
-          text: "Worked as a full-time junior developer at Wahana Gumilang for 1 year and 4 months.",
-        },
-        {
-          text: "Internship as a full-stack developer at Wahana Gumilang for 3 months.",
-        },
-      ],
-      experiencesNon: [
-
-        {
-          text: "I earned a certificate of completion in cloud computing through a program led by Google, Tokopedia, Gojek, and Traveloka.",
-        },
-        {
-          text: "I achieved the second place in a national-level web design competition.",
-        },
-        {
-          text: "Communication and Information Staff of Forum Mahasiswa Ronggolawe Tuban",
-        },
-      ],
+      experiences: experiences,
+      experiencesNon: experiencesNon
     };
   },
 
