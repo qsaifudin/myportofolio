@@ -26,7 +26,7 @@
     ],
     "date": "2024",
     "title": "Image Processing App Using Golang Vue",
-    "description": "his application combines the power of Golang for backend processing and Nuxt.js (Vue.js) for frontend interaction to facilitate various image processing tasks. Whether you need to convert image formats, resize images, or compress them while maintaining quality, this app has got you covered.",
+    "description": "This application combines the power of Golang for backend processing and Nuxt.js (Vue.js) for frontend interaction to facilitate various image processing tasks. Whether you need to convert image formats, resize images, or compress them while maintaining quality, this app has got you covered.",
     "list": [
       {
         "tech_stack": ["Golang", "VueJs/Nuxtjs"]
