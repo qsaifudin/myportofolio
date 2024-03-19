@@ -20,6 +20,24 @@
   {
     "tag": "Personal Project",
     "images": [
+      "/projects/imgprocessing/1.png",
+      "/projects/imgprocessing/2.png",
+      "/projects/imgprocessing/3.png"
+    ],
+    "date": "2024",
+    "title": "Image Processing App Using Golang Vue",
+    "description": "his application combines the power of Golang for backend processing and Nuxt.js (Vue.js) for frontend interaction to facilitate various image processing tasks. Whether you need to convert image formats, resize images, or compress them while maintaining quality, this app has got you covered.",
+    "list": [
+      {
+        "tech_stack": ["Golang", "VueJs/Nuxtjs"]
+      }
+    ],
+    "github": "https://github.com/qsaifudin/golang-vue-image-processing.git",
+    "link_video":"https://www.youtube.com/embed/WCtu0jOKOy4"
+  },
+  {
+    "tag": "Personal Project",
+    "images": [
       "/projects/knowledge/1.png",
       "/projects/knowledge/2.png",
       "/projects/knowledge/3.png"
